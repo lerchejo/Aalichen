@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b1da5c3ccccba4380c3b60e6900493, type: 3}
+  m_Name: ThomasDerPenner
+  m_EditorClassIdentifier: 
+  Container:
+  - item: {fileID: 11400000, guid: e57a32cbdcd763a4dbcc7a717392ebf2, type: 2}
+    amount: 6
+  - item: {fileID: 11400000, guid: 1a3a327d22b30434295321b73e4f3b35, type: 2}
+    amount: 3
+  Coins: 1000
