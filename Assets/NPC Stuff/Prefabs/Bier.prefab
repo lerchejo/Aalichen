@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &429806430022424730
 RectTransform:
   m_ObjectHideFlags: 0
@@ -234,6 +234,9 @@ MonoBehaviour:
   pickUpText: {fileID: 1714438820051095022}
   proximityThreshold: 2
   isFood: 1
+  eatingSound: {fileID: 295366054756018898, guid: 028a41cb2618958498015c857e1bcce0, type: 3}
+  eatingNaziSounds: []
+  burpSound: {fileID: 364206266927314761, guid: e1b222ce719b0754dba9803a0cce7682, type: 3}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &5012529774648687863

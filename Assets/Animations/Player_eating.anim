@@ -514,4 +514,11 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: playEatingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 608b2b14e709dfc47b4e92a8b40d8110, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

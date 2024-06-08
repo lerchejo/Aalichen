@@ -8,11 +8,13 @@ public class PickUpText : MonoBehaviour
   [SerializeField] private TextMeshProUGUI pickUpText;
   [SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
+  [SerializeField] private AudioSource eatingSound;
+  [SerializeField] private AudioSource[] eatingNaziSounds;
+  [SerializeField] private AudioSource burpSound;
 
   public Animator animator;
-
   public GameManager gameManager;
-
+  public AnimationSound animationSound;
   private bool isEating = false;
 
   
@@ -32,7 +34,7 @@ public class PickUpText : MonoBehaviour
     if (pickUpAllowed && Input.GetKeyDown(KeyCode.F))
     {
         animator.SetBool("isEating", true);
-        print(isEating);
+        //print(isEating);
         if (isFood)
         {
           Invoke("eatFood", 2f);
@@ -45,11 +47,11 @@ public class PickUpText : MonoBehaviour
     }
 
     float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position);
-    print(distanceToPlayer);
+    //print(distanceToPlayer);
     if (distanceToPlayer < proximityThreshold)
     {
         pickUpText.gameObject.SetActive(true);
-        print(pickUpText.gameObject.activeSelf);
+        //print(pickUpText.gameObject.activeSelf);
         pickUpAllowed = true;
 
     }
@@ -74,9 +76,15 @@ public class PickUpText : MonoBehaviour
   private void eatFood()
   {
     Destroy(pickUpText.gameObject);
-    Destroy(gameObject);
+    animationSound.startEating();
     gameManager.incrementHP(10);
     animator.SetBool("isEating", isEating);
+    Destroy(gameObject);
+    // Wird nur bei Bier abgespielt
+    if (burpSound)
+    {
+      burpSound.Play();
+    }
   }
 
   private void eatNazi()
@@ -85,5 +93,14 @@ public class PickUpText : MonoBehaviour
     Destroy(gameObject);
     gameManager.incrementXP(10);
     animator.SetBool("isEating", isEating);
+    //eatingNaziSounds[Random.Range(0, eatingNaziSounds.Length)].Play();
+  }
+
+  public void playEatingSound()
+  {
+    print("Playing sound");
+    eatingSound.Play();
   }
 }
+
+

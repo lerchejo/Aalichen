@@ -369,5 +369,14 @@ MonoBehaviour:
   pickUpText: {fileID: 7467348947279362361}
   proximityThreshold: 2
   isFood: 0
+  eatingSound: {fileID: 0}
+  eatingNaziSounds:
+  - {fileID: 8796917679424417811, guid: 7789d14776a495d498616ebcbd3bb78f, type: 3}
+  - {fileID: 4719021207885426219, guid: 59567574c2f96f84893579ba45ce71c4, type: 3}
+  - {fileID: 7729781077572159111, guid: 6ad586093bba48f4982ac5284293028c, type: 3}
+  - {fileID: 5475581025124344019, guid: 14a8ad0615da26e42bf1af2b7f3bc4a5, type: 3}
+  - {fileID: 4441504109457891354, guid: 16d7107ef20546644b176dd30171736b, type: 3}
+  - {fileID: 5210851464789338605, guid: 47cab6015c17fa5439701ae462ac107a, type: 3}
+  burpSound: {fileID: 0}
   animator: {fileID: 0}
   gameManager: {fileID: 0}

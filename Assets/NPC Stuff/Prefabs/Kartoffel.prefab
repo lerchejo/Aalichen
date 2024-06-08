@@ -267,6 +267,9 @@ MonoBehaviour:
   pickUpText: {fileID: 322483957466193527}
   proximityThreshold: 2
   isFood: 1
+  eatingSound: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf, type: 3}
+  eatingNaziSounds: []
+  burpSound: {fileID: 0}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
 --- !u!1 &6128560143560416160
