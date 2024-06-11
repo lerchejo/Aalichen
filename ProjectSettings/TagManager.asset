@@ -6,6 +6,7 @@ TagManager:
   tags:
   - canvas
   - resources
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,6 @@ public class AIChase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         _distance = Vector2.Distance(player.transform.position, transform.position);
         Vector2 direction = player.transform.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

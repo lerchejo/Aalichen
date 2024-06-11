@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using Unity.VisualScripting;
+using Random = UnityEngine.Random;
 
 public class PickUpText : MonoBehaviour
 {
@@ -10,9 +13,10 @@ public class PickUpText : MonoBehaviour
   [SerializeField] private bool isFood = true;
   
   
-  public GameObject Nazi;
+  public GameObject Parent;
   public Animator animator;
-
+  
+  
   public GameManager gameManager;
 
   private bool isEating = false;
@@ -21,75 +25,69 @@ public class PickUpText : MonoBehaviour
 
   private bool pickUpAllowed;
 
-  private void start()
+  private void Start()
   {
     pickUpText.gameObject.SetActive(false);
   }
-
   private void Update()
   {
-
- 
-
     if (pickUpAllowed && Input.GetKeyDown(KeyCode.F))
     {
-        animator.SetBool("isEating", true);
-        print(isEating);
+      animator.SetBool("isEating", true);
+      
+      
         if (isFood)
         {
-          Invoke("eatFood", 2f);
+          Invoke(nameof(eatFood), 2f);
         }
         else
         {
-           Invoke("eatNazi", 2f);
+          Invoke(nameof(eatNazi), 2f);
         }
-        isEating = false;
-    }
-
-    float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position);
-    print(distanceToPlayer);
-    if (distanceToPlayer < proximityThreshold)
-    {
-        pickUpText.gameObject.SetActive(true);
-        print(pickUpText.gameObject.activeSelf);
-        pickUpAllowed = true;
-
-    }
-    else 
-    {
-        pickUpText.gameObject.SetActive(false);
-        pickUpAllowed = false;
-    }
-    
-  }
-
-
-  private void OnTriggerExit2D(Collider2D collision)
-  {
-    if (collision.gameObject.name.Equals("Player"))
-    {
-      pickUpText.gameObject.SetActive(false);
-      pickUpAllowed = false;
+      
     }
   }
 
   private void eatFood()
   {
-    Destroy(pickUpText.gameObject);
-    Destroy(gameObject);
-    if (gameManager.HP < 1000)
+    pickUpText.gameObject.SetActive(false);
+    Destroy(Parent.gameObject);
+    if (gameManager.HP <= 900)
     {
-      gameManager.incrementHP(10);
+      gameManager.incrementHP(100);
     }
-    animator.SetBool("isEating", isEating);
+    else if (gameManager.HP > 900 && gameManager.HP % 100 != 0)
+    {
+      gameManager.incrementHP(100 - gameManager.HP % 100);
+    }
+    animator.SetBool("isEating", false); // Set isEating to false after eating
   }
 
   private void eatNazi()
   {
-    //Destroy(pickUpText.gameObject);
-    //Destroy(gameObject);
-    Destroy(Nazi.gameObject);
-    gameManager.incrementXP(10);
-    animator.SetBool("isEating", isEating);
+    Destroy(Parent.gameObject);
+    pickUpText.gameObject.SetActive(false);
+    var random = Random.Range(1, 10);
+    gameManager.incrementXP(100);
+    gameManager.incrementCoins(30);
+    animator.SetBool("isEating", false); // Set isEating to false after eating
+  }
+  
+  private void OnTriggerEnter2D(Collider2D other)
+  {
+    if (other.CompareTag("Player"))
+    {
+        pickUpText.gameObject.SetActive(true);
+        pickUpAllowed = true;
+    }
+  }
+  
+  private void OnTriggerExit2D(Collider2D collision)
+  {
+    if (collision.CompareTag("Player"))
+    {
+      pickUpText.gameObject.SetActive(false);
+      pickUpAllowed = false;
+    }
   }
 }

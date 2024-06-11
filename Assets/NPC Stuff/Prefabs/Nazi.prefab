@@ -245,6 +245,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633905459509919669}
+  - component: {fileID: 360984841156088686}
+  - component: {fileID: 8518930207326751106}
+  - component: {fileID: 8958945083765022289}
+  - component: {fileID: 7782549987914362273}
+  - component: {fileID: 3233529684145239169}
   m_Layer: 0
   m_Name: Nazi
   m_TagString: Untagged
@@ -265,10 +270,125 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7126621076781480610}
   - {fileID: 4742013901384845617}
+  - {fileID: 7126621076781480610}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &360984841156088686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3a82821485975439640c91dc53aaf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 5
+  distanceToPlayer: 20
+  roationSpeed: 0.5
+--- !u!114 &8518930207326751106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd955a6fdd99e341845de1a6aff3671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  moveSpeed: 2
+  decisionTime: {x: 1, y: 2}
+--- !u!114 &8958945083765022289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a73de073d6d7247b552b569a7f140c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  gameManager: {fileID: 0}
+--- !u!70 &7782549987914362273
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.14052618, y: 0.5269743}
+  m_Size: {x: 1.2963164, y: 3.0493429}
+  m_Direction: 0
+--- !u!70 &3233529684145239169
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.15389633, y: 0.5457864}
+  m_Size: {x: 2.9683914, y: 4.4188395}
+  m_Direction: 0
 --- !u!1 &8535085688699223468
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +416,7 @@ Transform:
   m_GameObject: {fileID: 8535085688699223468}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1498, y: 0.5244, z: 0.30899835}
+  m_LocalPosition: {x: 0.141, y: 0.5244, z: 0.30899835}
   m_LocalScale: {x: 1.2997, y: 1.5244, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -369,5 +489,6 @@ MonoBehaviour:
   pickUpText: {fileID: 7467348947279362361}
   proximityThreshold: 2
   isFood: 0
+  Parent: {fileID: 0}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
