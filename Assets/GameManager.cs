@@ -6,9 +6,9 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    private int HP = 0;
-    private int XP = 0;
-    private int coins = 0;
+    public int HP = 1000;
+    public int XP = 0;
+    public int coins = 0;
 
     [SerializeField] private TextMeshProUGUI HPText;
     [SerializeField] private TextMeshProUGUI XPText;

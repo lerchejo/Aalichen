@@ -8,7 +8,9 @@ public class PickUpText : MonoBehaviour
   [SerializeField] private TextMeshProUGUI pickUpText;
   [SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
-
+  
+  
+  public GameObject Nazi;
   public Animator animator;
 
   public GameManager gameManager;
@@ -75,14 +77,18 @@ public class PickUpText : MonoBehaviour
   {
     Destroy(pickUpText.gameObject);
     Destroy(gameObject);
-    gameManager.incrementHP(10);
+    if (gameManager.HP < 1000)
+    {
+      gameManager.incrementHP(10);
+    }
     animator.SetBool("isEating", isEating);
   }
 
   private void eatNazi()
   {
-    Destroy(pickUpText.gameObject);
-    Destroy(gameObject);
+    //Destroy(pickUpText.gameObject);
+    //Destroy(gameObject);
+    Destroy(Nazi.gameObject);
     gameManager.incrementXP(10);
     animator.SetBool("isEating", isEating);
   }
