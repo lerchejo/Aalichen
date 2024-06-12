@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class PickUpText : MonoBehaviour
 {
   [SerializeField] private TextMeshProUGUI pickUpText;
-  [SerializeField] private float proximityThreshold = 2.0f;
+  //[SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
   
   
@@ -20,6 +20,7 @@ public class PickUpText : MonoBehaviour
   public GameManager gameManager;
 
   private bool isEating = false;
+  private NPC npc;
 
   
 
@@ -27,6 +28,7 @@ public class PickUpText : MonoBehaviour
 
   private void Start()
   {
+    npc = FindObjectOfType<NPC>();
     pickUpText.gameObject.SetActive(false);
   }
   private void Update()
@@ -65,7 +67,26 @@ public class PickUpText : MonoBehaviour
 
   private void eatNazi()
   {
-    Destroy(Parent.gameObject);
+    if (npc.enemies == null || Parent == null)
+    {
+      //Debug.LogError("NPC, NPC enemies list, or Parent is null");
+      return;
+    }
+
+    GameObject enemyToBeEaten = Parent.gameObject;
+    if (enemyToBeEaten == null)
+    {
+      //Debug.LogError("Enemy to be eaten is null");
+      return;
+    }
+    
+    if (this == null)
+    {
+      Debug.LogError("NPC is null, cannot deal damage");
+      return;
+    }
+    npc.enemies.Remove(enemyToBeEaten);
+    Destroy(enemyToBeEaten);
     pickUpText.gameObject.SetActive(false);
     var random = Random.Range(1, 10);
     gameManager.incrementXP(100);
