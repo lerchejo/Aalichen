@@ -90,7 +90,7 @@ public class PickUpText : MonoBehaviour
     pickUpText.gameObject.SetActive(false);
     var random = Random.Range(1, 10);
     gameManager.incrementXP(100);
-    gameManager.incrementCoins(30);
+    gameManager.incrementCoins(random);
     animator.SetBool("isEating", false); // Set isEating to false after eating
   }
   
