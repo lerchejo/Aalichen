@@ -6,17 +6,13 @@ using TMPro;
 public class PickUpText : MonoBehaviour
 {
   [SerializeField] private TextMeshProUGUI pickUpText;
-  [SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
-  [SerializeField] private AudioSource[] eatingNaziSounds;
-  [SerializeField] private AudioSource burpSound;
 
   
   
   public GameObject Parent;
   public Animator animator;
   public GameManager gameManager;
-  public AnimationSound animationSound;
   private bool isEating = false;
 
   
@@ -75,6 +71,7 @@ public class PickUpText : MonoBehaviour
   {
     if (other.CompareTag("Player"))
     {
+        
         pickUpText.gameObject.SetActive(true);
         pickUpAllowed = true;
     }
