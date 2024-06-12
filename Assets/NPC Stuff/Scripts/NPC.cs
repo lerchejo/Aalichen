@@ -23,6 +23,9 @@ public class NPC : MonoBehaviour
     public int HP = 500; // Health of NPC
     [FormerlySerializedAs("HealthBar")] public HealthBar healthBar; // Experience of NPC
     public GameObject enemy; // Reference to the enemy
+    [SerializeField] private AudioSource[] hireJerkSounds;
+    //Last played hireJerkSound, must be initialized to avoid error
+    private AudioSource lastHireJerkSound;
 
 
 
@@ -34,6 +37,9 @@ public class NPC : MonoBehaviour
         //Shopdisplay = ShopDisplay.instance;
         
         healthBar.SetMaxHealth(HP);
+        
+        // Initialize the lastHireJerkSound to the first sound in the array to avoid Errors
+        lastHireJerkSound = hireJerkSounds[0];
     }
     
     
@@ -57,6 +63,13 @@ public class NPC : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.E) && inDistance)
         {
+            //Play a random hireJerkSound
+            if (!lastHireJerkSound.isPlaying)
+            {
+                lastHireJerkSound = hireJerkSounds[UnityEngine.Random.Range(0, hireJerkSounds.Length)];
+                lastHireJerkSound.Play();
+            }
+            
             if (!shouldFollow)
             {
                 GameManager.decrementCoins(amount);

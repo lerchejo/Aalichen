@@ -8,6 +8,7 @@ public class Damage : MonoBehaviour
     public int damage = 1;
     public GameManager gameManager;
     public GameObject Player;
+    public AudioSource damageSound;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,11 @@ public class Damage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (!damageSound.isPlaying)
+            {
+                damageSound.Play();
+            }
+            
             gameManager.decrementHP(damage);
             if (gameManager.HP < 0)
             {
