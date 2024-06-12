@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8958945083765022289}
   - component: {fileID: 7782549987914362273}
   - component: {fileID: 3233529684145239169}
+  - component: {fileID: 7732658292410958006}
   m_Layer: 0
   m_Name: Nazi
   m_TagString: Enemy
@@ -155,6 +156,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0.14165765, y: 0.09785366}
   m_Size: {x: 1.3204862, y: 2.212841}
   m_Direction: 0
+--- !u!50 &7732658292410958006
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 1
+  m_Mass: 3.597512
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &8535085688699223468
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpText: {fileID: 0}
-  proximityThreshold: 2
   isFood: 0
   Parent: {fileID: 4052442795956121073}
   animator: {fileID: 0}
