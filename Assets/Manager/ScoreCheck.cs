@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,7 @@ public class ScoreCheck : MonoBehaviour
     //This is temporary; replace with the right one
     public Inventory playerInventory;
 
-    private DialogWindow dialogWindow;
+    public TextMeshProUGUI dialogWindow;
 
     public float timer = 10;
     private float currentTimer = 100;
@@ -22,9 +23,7 @@ public class ScoreCheck : MonoBehaviour
     public int NeededScore = 1000;
 
     private void Start()
-    {
-        dialogWindow = DialogWindow.instance;
-    }
+    { }
 
     private void Update()
     {
@@ -35,37 +34,43 @@ public class ScoreCheck : MonoBehaviour
                 currentTimer -= Time.deltaTime;
             }
 
-            if (currentTimer <= 0)
-            {
-                LevelChangeReady = true;
-            }
+          //  if (currentTimer <= 0)
+          //  {
+          //      LevelChangeReady = true;
+          //  }
         }
     }
 
     private void LateUpdate()
     {
+        currentTimer = timer;
+
         if(playerInventory.Coins >= NeededScore && !LevelCleared) 
         {
-            dialogWindow.ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
-            StartCoroutine(DialogClose());
+            //ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
+            //StartCoroutine(DialogClose());
             currentTimer = timer;
             LevelCleared = true;
         }
     }
 
-    IEnumerator DialogClose()
+    IEnumerator DialogClose(float seconds = 5f)
     {
-        yield return new WaitForSeconds(1.5f);
-        dialogWindow.DeActivateDialog();
+        yield return new WaitForSeconds(seconds);
+        dialogWindow.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            
+            ActivateDialog("The Bus is coming in " + (int)currentTimer + " minutes!");
+            StartCoroutine(DialogClose());
             if (LevelCleared && !LevelChangeReady)
             {
-                dialogWindow.ActivateDialog("The Bus is coming in " + (int)currentTimer + " minutes!");
+                ActivateDialog("The Bus is coming in " + (int)currentTimer + " minutes!");
+               
                 StartCoroutine(DialogClose());
             }
             else if (LevelChangeReady)
@@ -74,9 +79,16 @@ public class ScoreCheck : MonoBehaviour
             }
             else
             {
-                dialogWindow.ActivateDialog("You still need " + (NeededScore - playerInventory.Coins) + " Coins!");
+                ActivateDialog("The Bus is coming in " + (int)currentTimer + " minutes!");
             }
         }
+    }
+
+    private void ActivateDialog(String text)
+    {
+        dialogWindow.SetText(text);
+        dialogWindow.gameObject.SetActive(true);
+        
     }
 
     private void OnTriggerStay2D(Collider2D other)

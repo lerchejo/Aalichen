@@ -159,12 +159,12 @@ Transform:
   m_GameObject: {fileID: 2772325653814725242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7361012, y: -0.24570179, z: 0.84146523}
+  m_LocalPosition: {x: -25.06, y: -20.91, z: 0.84146523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8053835247863512127}
   - {fileID: 7345031184134883149}
+  - {fileID: 8053835247863512127}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4241648708650649533
@@ -194,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 4241648708650649533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7361012, y: 0.24570179, z: -0.84146523}
+  m_LocalPosition: {x: 0.25, y: -0.15, z: -0.84146523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -267,7 +267,9 @@ MonoBehaviour:
   pickUpText: {fileID: 322483957466193527}
   proximityThreshold: 2
   isFood: 1
-  eatingSound: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf, type: 3}
+  Nazi: {fileID: 0}
+  eatingSound: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf,
+    type: 3}
   eatingNaziSounds: []
   burpSound: {fileID: 0}
   animator: {fileID: 0}

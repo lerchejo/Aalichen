@@ -1,0 +1,48 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Damage : MonoBehaviour
+{
+    public int damage = 1;
+    public GameManager gameManager;
+    public GameObject Player;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene.");
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            gameManager.decrementHP(damage);
+            if (gameManager.HP < 0)
+            {
+                Destroy(Player);
+            }
+        }
+      // else if (other.CompareTag("NPC"))
+      // {
+      //     // Check if the collided object is the damage collider
+      //    
+      //         var npc = other.GetComponentInParent<NPC>(); // Get the NPC component from the parent of the collided object
+      //         if (npc == null) return;
+      //         
+      //         npc.HP -= damage;
+      //         npc.healthBar.SetHealth(npc.HP); // Update the health bar
+      //         
+      //         if (npc.HP < 0)
+      //         {
+      //             Destroy(npc.gameObject);
+      //         }
+      // }
+    }
+}

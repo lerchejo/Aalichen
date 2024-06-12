@@ -36,7 +36,6 @@ public class DialogWindow : MonoBehaviour
 
     private void Start()
     {
-        //UGLY UUUUUUUUUUUURFHDFGDFG BARFGHHGH
         D_WindowParent = transform.GetChild(0).gameObject;
         text = D_WindowParent.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
     }

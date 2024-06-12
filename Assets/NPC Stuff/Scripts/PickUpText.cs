@@ -11,6 +11,9 @@ public class PickUpText : MonoBehaviour
   [SerializeField] private AudioSource[] eatingNaziSounds;
   [SerializeField] private AudioSource burpSound;
 
+  
+  
+  public GameObject Parent;
   public Animator animator;
   public GameManager gameManager;
   public AnimationSound animationSound;
@@ -20,79 +23,69 @@ public class PickUpText : MonoBehaviour
 
   private bool pickUpAllowed;
 
-  private void start()
+  private void Start()
   {
     pickUpText.gameObject.SetActive(false);
   }
-
   private void Update()
   {
-
- 
-
     if (pickUpAllowed && Input.GetKeyDown(KeyCode.F))
     {
-        animator.SetBool("isEating", true);
-        //print(isEating);
+      animator.SetBool("isEating", true);
+      
+      
         if (isFood)
         {
-          Invoke("eatFood", 0.8f);
+          Invoke(nameof(eatFood), 2f);
         }
         else
         {
-           Invoke("eatNazi", 2f);
+          Invoke(nameof(eatNazi), 2f);
         }
-        isEating = false;
-    }
-
-    float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position);
-    //print(distanceToPlayer);
-    if (distanceToPlayer < proximityThreshold)
-    {
-        pickUpText.gameObject.SetActive(true);
-        //print(pickUpText.gameObject.activeSelf);
-        pickUpAllowed = true;
-
-    }
-    else 
-    {
-        pickUpText.gameObject.SetActive(false);
-        pickUpAllowed = false;
-    }
-    
-  }
-
-
-  private void OnTriggerExit2D(Collider2D collision)
-  {
-    if (collision.gameObject.name.Equals("Player"))
-    {
-      pickUpText.gameObject.SetActive(false);
-      pickUpAllowed = false;
+      
     }
   }
 
   private void eatFood()
   {
-    Destroy(pickUpText.gameObject);
-    gameManager.incrementHP(10);
-    animator.SetBool("isEating", isEating);
-    Destroy(gameObject);
-    // Wird nur bei Bier abgespielt
-    if (burpSound)
+    pickUpText.gameObject.SetActive(false);
+    Destroy(Parent.gameObject);
+    if (gameManager.HP <= 900)
     {
-      burpSound.Play();
+      gameManager.incrementHP(100);
     }
+    else if (gameManager.HP > 900 && gameManager.HP % 100 != 0)
+    {
+      gameManager.incrementHP(100 - gameManager.HP % 100);
+    }
+    animator.SetBool("isEating", false); // Set isEating to false after eating
   }
 
   private void eatNazi()
   {
-    Destroy(pickUpText.gameObject);
-    Destroy(gameObject);
-    gameManager.incrementXP(10);
-    animator.SetBool("isEating", isEating);
-    //eatingNaziSounds[Random.Range(0, eatingNaziSounds.Length)].Play();
+    Destroy(Parent.gameObject);
+    pickUpText.gameObject.SetActive(false);
+    var random = Random.Range(1, 10);
+    gameManager.incrementXP(100);
+    gameManager.incrementCoins(30);
+    animator.SetBool("isEating", false); // Set isEating to false after eating
+  }
+  
+  private void OnTriggerEnter2D(Collider2D other)
+  {
+    if (other.CompareTag("Player"))
+    {
+        pickUpText.gameObject.SetActive(true);
+        pickUpAllowed = true;
+    }
+  }
+  
+  private void OnTriggerExit2D(Collider2D collision)
+  {
+    if (collision.CompareTag("Player"))
+    {
+      pickUpText.gameObject.SetActive(false);
+      pickUpAllowed = false;
+    }
   }
 }
-
-

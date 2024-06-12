@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31fdf773c70c7544f8ee188a5d6f929c, type: 3}
-  m_Name: New Default Item
+  m_Script: {fileID: 11500000, guid: 583aa9a8311e87546be832e0d75d3190, type: 3}
+  m_Name: BusDialog
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 3521951135811165996, guid: 443b0f4a5bc314b4abaaabeab27517cc, type: 3}
-  Stack: 0
-  description: 
-  Price: 5
+  DialogName: Bus Arrival
+  EntryText: 
+  ExitText: 
+  yesText: 
+  noText: 
