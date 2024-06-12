@@ -8,7 +8,6 @@ public class PickUpText : MonoBehaviour
   [SerializeField] private TextMeshProUGUI pickUpText;
   [SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
-  [SerializeField] private AudioSource eatingSound;
   [SerializeField] private AudioSource[] eatingNaziSounds;
   [SerializeField] private AudioSource burpSound;
 
@@ -37,7 +36,7 @@ public class PickUpText : MonoBehaviour
         //print(isEating);
         if (isFood)
         {
-          Invoke("eatFood", 2f);
+          Invoke("eatFood", 0.8f);
         }
         else
         {
@@ -76,7 +75,6 @@ public class PickUpText : MonoBehaviour
   private void eatFood()
   {
     Destroy(pickUpText.gameObject);
-    animationSound.startEating();
     gameManager.incrementHP(10);
     animator.SetBool("isEating", isEating);
     Destroy(gameObject);
@@ -94,12 +92,6 @@ public class PickUpText : MonoBehaviour
     gameManager.incrementXP(10);
     animator.SetBool("isEating", isEating);
     //eatingNaziSounds[Random.Range(0, eatingNaziSounds.Length)].Play();
-  }
-
-  public void playEatingSound()
-  {
-    print("Playing sound");
-    eatingSound.Play();
   }
 }
 

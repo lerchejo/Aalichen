@@ -1979,6 +1979,10 @@ PrefabInstance:
       value: eating
       objectReference: {fileID: 0}
     - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ecc93095d09bc2f4a945e757b7021816, type: 3}
+    - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
