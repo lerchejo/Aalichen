@@ -42,6 +42,8 @@ public class Movement : MonoBehaviour
             // Start a new dash
             currentDashCoroutine = StartCoroutine(Dash());
         }
+
+      
     }
     
     IEnumerator Dash()
