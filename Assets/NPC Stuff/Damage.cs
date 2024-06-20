@@ -8,7 +8,7 @@ public class Damage : MonoBehaviour
     public int damage = 1;
     public GameManager gameManager;
     public GameObject Player;
-
+    public LevelManager levelManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +26,17 @@ public class Damage : MonoBehaviour
             gameManager.decrementHP(damage);
             if (gameManager.HP < 0)
             {
-                Destroy(Player);
+                Time.timeScale = 0f;
+                levelManager.enableDeathScreen();
+                try
+                {
+                    Destroy(Player);
+                }
+                catch (Exception e)
+                {
+                    
+                }
+                
             }
         }
       // else if (other.CompareTag("NPC"))

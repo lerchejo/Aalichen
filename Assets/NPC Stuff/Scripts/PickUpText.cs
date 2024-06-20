@@ -33,7 +33,7 @@ public class PickUpText : MonoBehaviour
   }
   private void Update()
   {
-    if (pickUpAllowed && Input.GetKeyDown(KeyCode.F))
+    if (pickUpAllowed && Input.GetKeyDown(KeyCode.F) && isEating == false)
     {
       animator.SetBool("isEating", true);
       
@@ -89,7 +89,7 @@ public class PickUpText : MonoBehaviour
     Destroy(enemyToBeEaten);
     pickUpText.gameObject.SetActive(false);
     var random = Random.Range(1, 10);
-    gameManager.incrementXP(100);
+    gameManager.incrementXP(Random.Range(5, 20));
     gameManager.incrementCoins(random);
     animator.SetBool("isEating", false); // Set isEating to false after eating
   }
