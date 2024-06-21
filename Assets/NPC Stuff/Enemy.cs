@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
+
+    public float Health = 50f;
     public int damage = 1;
     public GameManager gameManager;
     public GameObject Player;
@@ -31,11 +33,11 @@ public class Damage : MonoBehaviour
                 try
                 {
                     Destroy(Player);
-                }
-                catch (Exception e)
+                }catch (Exception e)
                 {
-                    
+                    Debug.LogError("Player not found in the scene.");
                 }
+                
                 
             }
         }

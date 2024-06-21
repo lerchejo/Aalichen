@@ -12,7 +12,8 @@ public class PickUpText : MonoBehaviour
   //[SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
   
-  
+  public Enemy Enemy = null;
+  public HealthBar HealthBar = null;
   public GameObject Parent;
   public Animator animator;
   
@@ -30,6 +31,18 @@ public class PickUpText : MonoBehaviour
   {
     npc = FindObjectOfType<NPC>();
     pickUpText.gameObject.SetActive(false);
+    
+    if (isFood)
+    {
+      Enemy = null;
+      HealthBar = null;
+    }
+    else
+    {
+      HealthBar.SetMaxHealth(Enemy.Health);
+    }
+    
+    
   }
   private void Update()
   {
@@ -65,6 +78,24 @@ public class PickUpText : MonoBehaviour
     animator.SetBool("isEating", false); // Set isEating to false after eating
   }
 
+  private void DealDamage()
+  {
+    Enemy.Health -= gameManager.Damage;
+    HealthBar.SetHealth(Enemy.Health);
+
+    GameObject enemyToBeEaten = Parent.gameObject;
+    var random = Random.Range(1, 10);
+ 
+
+    if (Enemy.Health <= 0f)
+    {
+      gameManager.incrementXP(Random.Range(5, 20));
+      gameManager.incrementCoins(random);
+      npc.enemies.Remove(enemyToBeEaten);
+      Destroy(enemyToBeEaten);
+    }
+  }
+
   private void eatNazi()
   {
     if (npc.enemies == null || Parent == null)
@@ -73,24 +104,17 @@ public class PickUpText : MonoBehaviour
       return;
     }
 
-    GameObject enemyToBeEaten = Parent.gameObject;
-    if (enemyToBeEaten == null)
-    {
-      //Debug.LogError("Enemy to be eaten is null");
-      return;
-    }
+   
     
     if (this == null)
     {
       Debug.LogError("NPC is null, cannot deal damage");
       return;
     }
-    npc.enemies.Remove(enemyToBeEaten);
-    Destroy(enemyToBeEaten);
     pickUpText.gameObject.SetActive(false);
-    var random = Random.Range(1, 10);
-    gameManager.incrementXP(Random.Range(5, 20));
-    gameManager.incrementCoins(random);
+
+    DealDamage();
+    
     animator.SetBool("isEating", false); // Set isEating to false after eating
   }
   

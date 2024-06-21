@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
 {
     public int HP = 1000;
     public int XP = 0;
+    public int Damage = 10;
     public int coins = 0;
     public int level = 0;
     
-    public GameObject LevelUpScreen;
     public LevelUpManager LevelUpManager;
     public GameObject PauseScreen;
     // New variable for XP thresholds for each level
@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        LevelText.SetText("Level: " + level);
         healthBar.SetMaxHealth(HP);
         experienceBar.SetXP(1);
         experienceBar.SetMaxXP(levelThresholds[1]);

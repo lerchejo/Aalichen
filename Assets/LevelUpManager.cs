@@ -33,10 +33,12 @@ public class LevelUpManager : MonoBehaviour
     private Upgrade[] upgrades = new Upgrade[]
     {
         new Upgrade { Name = "Increase Health", Apply = (gm, mv) => gm.HP +=  Random.Range(25, 75) },
-        new Upgrade { Name = "Increase Coins", Apply = (gm, mv) => gm.coins += Random.Range(10, 50)},
+        new Upgrade { Name = "Gain Coins", Apply = (gm, mv) => gm.coins += Random.Range(10, 50)},
         new Upgrade { Name = "Increase Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) },
         new Upgrade { Name = "Dash Duration", Apply = (gm, mv) => mv.dashDuration += Random.Range(0.2f, 0.4f) },
-        new Upgrade { Name = "Increase Dash Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) }
+        new Upgrade { Name = "Increase Dash Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) },
+        new Upgrade { Name = "Increase Player Strength", Apply = (gm, mv) => gm.Damage += Random.Range(5,10) }
+
     };
     
     private void DisplayUpgrades(Upgrade[] upgrades)
@@ -58,9 +60,17 @@ public class LevelUpManager : MonoBehaviour
         Cursor.visible = true;
         // Select three random upgrades
         Upgrade[] selectedUpgrades = new Upgrade[3];
+        List<int> selectedIndices = new List<int>();
         for (int i = 0; i < 3; i++)
         {
-            selectedUpgrades[i] = upgrades[Random.Range(0, upgrades.Length)];
+            int index;
+            do
+            {
+                index = Random.Range(0, upgrades.Length);
+            } while (selectedIndices.Contains(index));
+            
+            selectedIndices.Add(index);
+            selectedUpgrades[i] = upgrades[index];
         }
 
         // Assign each button to apply a different upgrade

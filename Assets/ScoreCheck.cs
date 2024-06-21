@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class ScoreCheck : MonoBehaviour
 {
     //This is temporary; replace with the right one
-    public Inventory playerInventory;
 
     public TextMeshProUGUI dialogWindow;
 
@@ -17,6 +16,7 @@ public class ScoreCheck : MonoBehaviour
     private float currentTimer = 100;
 
     private bool LevelCleared = false;
+    public GameManager gm;
 
     private bool LevelChangeReady = false;
 
@@ -45,7 +45,7 @@ public class ScoreCheck : MonoBehaviour
     {
         currentTimer = timer;
 
-        if(playerInventory.Coins >= NeededScore && !LevelCleared) 
+        if(gm.coins >= NeededScore && !LevelCleared) 
         {
             //ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
             //StartCoroutine(DialogClose());

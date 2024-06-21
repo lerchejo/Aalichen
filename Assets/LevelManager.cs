@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     
     public void ReloadLevel()
     {
+        Time.timeScale = 1f;
         string currentLevelName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentLevelName);
         Cursor.lockState = CursorLockMode.Locked;
