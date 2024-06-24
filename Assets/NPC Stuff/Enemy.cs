@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
+
+    public float Health = 50f;
     public int damage = 1;
     public GameManager gameManager;
     public GameObject Player;
+    public LevelManager levelManager;
     public AudioSource damageSound;
 
     // Start is called before the first frame update
@@ -32,7 +35,17 @@ public class Damage : MonoBehaviour
             gameManager.decrementHP(damage);
             if (gameManager.HP < 0)
             {
-                Destroy(Player);
+                Time.timeScale = 0f;
+                levelManager.enableDeathScreen();
+                try
+                {
+                    Destroy(Player);
+                }catch (Exception e)
+                {
+                    Debug.LogError("Player not found in the scene.");
+                }
+                
+                
             }
         }
       // else if (other.CompareTag("NPC"))

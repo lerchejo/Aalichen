@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3821041245291582811}
   - component: {fileID: 5103790664430678583}
   - component: {fileID: 8418578900830100836}
-  - component: {fileID: 2598708678029273139}
+  - component: {fileID: 1671655578817915293}
   m_Layer: 0
   m_Name: Streusel
   m_TagString: Untagged
@@ -103,7 +103,7 @@ MonoBehaviour:
   Parent: {fileID: 7670351050387083672}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
---- !u!58 &2598708678029273139
+--- !u!58 &1671655578817915293
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

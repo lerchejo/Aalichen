@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7272427834333944858}
   - component: {fileID: 4881583761748401982}
   - component: {fileID: 5687584892254095896}
-  - component: {fileID: 9114490957648888507}
+  - component: {fileID: 1432625743076599055}
   m_Layer: 0
   m_Name: Reisfladen
   m_TagString: Untagged
@@ -103,7 +103,7 @@ MonoBehaviour:
   Parent: {fileID: 7213092602341378705}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
---- !u!58 &9114490957648888507
+--- !u!58 &1432625743076599055
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8053835247863512127}
   - component: {fileID: 8397507796747874778}
   - component: {fileID: 3419888297067495132}
-  - component: {fileID: 5052633599552461438}
+  - component: {fileID: 6284691091851714133}
   m_Layer: 0
   m_Name: Kartoffel
   m_TagString: Untagged
@@ -135,7 +135,7 @@ MonoBehaviour:
   Parent: {fileID: 2772325653814725242}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
---- !u!58 &5052633599552461438
+--- !u!58 &6284691091851714133
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8670247628009847474}
   - component: {fileID: 8318850541456801098}
   - component: {fileID: 7522978671100410922}
-  - component: {fileID: 3975578850689244027}
+  - component: {fileID: 5158131574683881569}
   m_Layer: 0
   m_Name: Schnitzel
   m_TagString: Untagged
@@ -103,7 +103,7 @@ MonoBehaviour:
   Parent: {fileID: 8028182745187912078}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
---- !u!58 &3975578850689244027
+--- !u!58 &5158131574683881569
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

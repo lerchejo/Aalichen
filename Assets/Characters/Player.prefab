@@ -345,10 +345,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5293572507061493354}
-  - component: {fileID: 4742534698154282405}
-  - component: {fileID: 2091999671226720932}
-  - component: {fileID: 4491621629142699544}
-  - component: {fileID: 2981526969203614641}
+  - component: {fileID: 7438501880606337182}
+  - component: {fileID: 4985431049534570458}
+  - component: {fileID: 1643408826383473793}
+  - component: {fileID: 7942555083734705910}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -377,7 +377,7 @@ Transform:
   - {fileID: 8688854807215964324}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4742534698154282405
+--- !u!114 &7438501880606337182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,7 +392,7 @@ MonoBehaviour:
   runSpeed: 10
   dashSpeed: 40
   dashDuration: 0.25
---- !u!50 &2091999671226720932
+--- !u!50 &4985431049534570458
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -419,7 +419,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &4491621629142699544
+--- !u!70 &1643408826383473793
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,7 +454,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.114583015, y: 3}
   m_Size: {x: 6.229166, y: 11}
   m_Direction: 0
---- !u!95 &2981526969203614641
+--- !u!95 &7942555083734705910
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0

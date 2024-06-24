@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 8958945083765022289}
   - component: {fileID: 7782549987914362273}
   - component: {fileID: 3233529684145239169}
+  - component: {fileID: 7732658292410958006}
   m_Layer: 0
   m_Name: Nazi
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,6 +54,8 @@ MonoBehaviour:
   speed: 5
   distanceToPlayer: 20
   roationSpeed: 0
+  deltaDistance: 0
+  id: ebc4d1c4-c66b-4550-9f2c-357f70dabd61
 --- !u!114 &8518930207326751106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +156,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0.14165765, y: 0.09785366}
   m_Size: {x: 1.3204862, y: 2.212841}
   m_Direction: 0
+--- !u!50 &7732658292410958006
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052442795956121073}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 1
+  m_Mass: 3.597512
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &8535085688699223468
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +194,7 @@ GameObject:
   - component: {fileID: 7126621076781480610}
   - component: {fileID: 105828923832595911}
   - component: {fileID: 2338183373067076069}
-  - component: {fileID: 7968468824280478678}
+  - component: {fileID: 3923717718886122488}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -256,7 +286,7 @@ MonoBehaviour:
   Parent: {fileID: 4052442795956121073}
   animator: {fileID: 0}
   gameManager: {fileID: 0}
---- !u!70 &7968468824280478678
+--- !u!70 &3923717718886122488
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
