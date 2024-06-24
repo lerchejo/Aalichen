@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_eating
+  m_Name: Player_eatingFood
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -516,9 +516,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: playEatingSound
+    functionName: 
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 608b2b14e709dfc47b4e92a8b40d8110, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: f73dfff77fde52b43ab9afb332092379, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class AnimationSound : MonoBehaviour
 {
-    [SerializeField] private AudioSource eatingSound;
+    [SerializeField] private AudioSource eatingFoodSound;
+    [SerializeField] private AudioSource eatingNaziSound;
     
-    public void playEatingSound()
+    public void playEatingFoodSound()
     {
-        if (!eatingSound.isPlaying)
+        if (!eatingFoodSound.isPlaying)
         {
-            eatingSound.Play();
+            eatingFoodSound.Play();
+        }
+    }
+    
+    public void playEatingNaziSound()
+    {
+        if (!eatingNaziSound.isPlaying)
+        {
+            eatingNaziSound.Play();
         }
     }
 }

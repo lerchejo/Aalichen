@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     public GameManager gameManager;
     public GameObject Player;
     public LevelManager levelManager;
-    public AudioSource damageSound;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +26,6 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (!damageSound.isPlaying)
-            {
-                damageSound.Play();
-            }
-            
             gameManager.decrementHP(damage);
             if (gameManager.HP < 0)
             {

@@ -8,7 +8,7 @@ public class DamageSound : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !damageSound.isPlaying)
+        if (other.CompareTag("Enemy") && !damageSound.isPlaying)
         {
             damageSound.Play();
         }
