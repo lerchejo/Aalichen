@@ -53,7 +53,7 @@ public class PickUpText : MonoBehaviour
         if (isFood)
         {
           animationSound.eatingFoodSound.Play();
-          Invoke(nameof(eatFood), 2f);
+          Invoke(nameof(eatFood), 1.5f);
         }
         else
         {

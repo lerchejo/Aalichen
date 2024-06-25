@@ -6,7 +6,7 @@ public class DamageSound : MonoBehaviour
 {
     [SerializeField] private AudioSource damageSound;
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Enemy") && !damageSound.isPlaying)
         {

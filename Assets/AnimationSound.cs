@@ -9,18 +9,12 @@ public class AnimationSound : MonoBehaviour
     
     public void playEatingFoodSound()
     {
-       // if (!eatingFoodSound.isPlaying)
-       // {
+        if (!eatingFoodSound.isPlaying)
+        {
             eatingFoodSound.Play();
-            StartCoroutine(playSoundRepetedly());
-            eatingFoodSound.Stop();
-       // }
+        }
     }
     
-    IEnumerator playSoundRepetedly()
-    {
-        yield return new WaitForSeconds(2);
-    }
     
     public void playEatingNaziSound()
     {
