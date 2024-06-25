@@ -3156,7 +3156,7 @@ Transform:
   m_GameObject: {fileID: 746594050}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105.13, y: -19.14, z: -0.40526703}
+  m_LocalPosition: {x: 88.16, y: -17.75, z: -0.40526703}
   m_LocalScale: {x: 0.5, y: 0.5, z: 10.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3226,7 +3226,7 @@ MonoBehaviour:
   distanceToPlayer: 10
   roationSpeed: 0
   GameManager: {fileID: 209911329}
-  deltaDistance: 0
+  deltaDistance: 1
 --- !u!70 &746594058
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -49647,12 +49647,12 @@ PrefabInstance:
     - target: {fileID: 4959827727886509146, guid: 9729375f92413084da9b4d55c7d17d62,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 109.95
+      value: 107.05
       objectReference: {fileID: 0}
     - target: {fileID: 4959827727886509146, guid: 9729375f92413084da9b4d55c7d17d62,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.458
+      value: -16.1
       objectReference: {fileID: 0}
     - target: {fileID: 4959827727886509146, guid: 9729375f92413084da9b4d55c7d17d62,
         type: 3}

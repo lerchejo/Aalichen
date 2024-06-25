@@ -12,9 +12,9 @@ public class Movement : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
 
-    public AnimatorController UpAnimator;
-    public AnimatorController DownAnimator;
-    public AnimatorController SideAnimator;
+   //public AnimatorController UpAnimator;
+   //public AnimatorController DownAnimator;
+   //public AnimatorController SideAnimator;
     
     public float runSpeed = 20.0f;
     public float dashSpeed = 40.0f; // Speed when dashing
@@ -40,32 +40,32 @@ public class Movement : MonoBehaviour
         
         Animation animation = GetComponent<Animation>();
         
+        /*
         // Set the direction parameter based on the direction of movement
         if (horizontal > 0)
         {
             animator.runtimeAnimatorController = SideAnimator;
             transform.localScale = new Vector3(1, 1, 1); // Set scale to 1 for moving right
-
+        
         }
         else if (horizontal < 0)
         {
             animator.runtimeAnimatorController = SideAnimator;
             transform.localScale = new Vector3(-1, 1, 1); // Set scale to -1 for moving left
-
-
+        
+        
         }
         else if (vertical > 0)
         {
             animator.runtimeAnimatorController = UpAnimator;
             animation.Play("front-walk-animation");
-
+        
         }
         else if (vertical < 0)
         {      
             animator.runtimeAnimatorController = DownAnimator;
             animation.Play("walk-back-animation");
-
-        }
+        } */
 
         
         // Check if space bar is being held down

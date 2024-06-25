@@ -12,9 +12,9 @@ public class NewMovement : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
 
-    public AnimatorController UpAnimator;
-    public AnimatorController DownAnimator;
-    public AnimatorController SideAnimator;
+  //  public AnimatorController UpAnimator;
+  //  public AnimatorController DownAnimator;
+  //  public AnimatorController SideAnimator;
     
     public float runSpeed = 20.0f;
     public float dashSpeed = 40.0f; // Speed when dashing
@@ -42,8 +42,9 @@ public class NewMovement : MonoBehaviour
         // Check if there is no input
         if (horizontal == 0 && vertical == 0)
         {
-            // Pause the animation
-            animator.speed = 0;
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveDown", false);
+            animator.SetBool("MoveSide", false);
         }
         else
         {
@@ -53,26 +54,42 @@ public class NewMovement : MonoBehaviour
             // Set the direction parameter based on the direction of movement
             if (horizontal > 0)
             {
-                animator.runtimeAnimatorController = SideAnimator;
+                animator.SetBool("isEatingNazi", false);
+                animator.SetBool("isEatingFood", false);
+                animator.SetBool("MoveUp", false);
+                animator.SetBool("MoveDown", false);
+                animator.SetBool("MoveSide", true);
                 transform.localScale = new Vector3(1, 1, 1); // Set scale to 1 for moving right
 
             }
             else if (horizontal < 0)
             {
-                animator.runtimeAnimatorController = SideAnimator;
+                animator.SetBool("isEatingNazi", false);
+                animator.SetBool("isEatingFood", false);
+                animator.SetBool("MoveUp", false);
+                animator.SetBool("MoveDown", false);
+                animator.SetBool("MoveSide", true);
+                
                 transform.localScale = new Vector3(-1, 1, 1); // Set scale to -1 for moving left
 
 
             }
             else if (vertical > 0)
             {
-                animator.runtimeAnimatorController = UpAnimator;
+                animator.SetBool("isEatingNazi", false);
+                animator.SetBool("isEatingFood", false);
+                animator.SetBool("MoveDown", false);
+                animator.SetBool("MoveSide", false);
+                animator.SetBool("MoveUp", true);
 
             }
             else if (vertical < 0)
             {
-                animator.runtimeAnimatorController = DownAnimator;
-
+                animator.SetBool("isEatingNazi", false);
+                animator.SetBool("isEatingFood", false);
+                animator.SetBool("MoveUp", false);
+                animator.SetBool("MoveSide", false);
+                animator.SetBool("MoveDown", true);
             }
 
 

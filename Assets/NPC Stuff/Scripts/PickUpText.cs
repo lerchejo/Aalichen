@@ -54,12 +54,19 @@ public class PickUpText : MonoBehaviour
       
         if (isFood)
         {
-          animator.SetBool("isEatingFood", true);
+          eatFood();
           Invoke(nameof(eatFood), 2f);
         }
         else
         {
+   
+          animator.SetBool("isEatingFood", false);
+          animator.SetBool("MoveUp", false);
+          animator.SetBool("MoveDown", false);
+          animator.SetBool("MoveSide", false);
+          
           animator.SetBool("isEatingNazi", true);
+   
           Invoke(nameof(eatNazi), 2f);
         }
       
@@ -68,8 +75,13 @@ public class PickUpText : MonoBehaviour
 
   private void eatFood()
   {
+
+          
+    animator.SetBool("isEatingFood", true);
+    
     pickUpText.gameObject.SetActive(false);
     Destroy(Parent.gameObject);
+    
     if (gameManager.HP <= 900)
     {
       gameManager.incrementHP(100);
@@ -78,6 +90,7 @@ public class PickUpText : MonoBehaviour
     {
       gameManager.incrementHP(100 - gameManager.HP % 100);
     }
+    
     animator.SetBool("isEatingFood", false); // Set isEating to false after eating
     isEating = false;
   }
@@ -102,6 +115,10 @@ public class PickUpText : MonoBehaviour
 
   private void eatNazi()
   {
+
+          
+    animator.SetBool("isEatingNazi", true);
+    
     if (npc.enemies == null || Parent == null)
     {
       //Debug.LogError("NPC, NPC enemies list, or Parent is null");
@@ -116,11 +133,11 @@ public class PickUpText : MonoBehaviour
       return;
     }
     pickUpText.gameObject.SetActive(false);
-
-    DealDamage();
-    
-    animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
     isEating = false;
+    DealDamage();
+    print(animator.name.ToString());
+    animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
+    
   }
   
   private void OnTriggerEnter2D(Collider2D other)
