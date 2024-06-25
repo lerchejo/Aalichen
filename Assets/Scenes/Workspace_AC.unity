@@ -1851,6 +1851,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 928344182}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &339663404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339663396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73dfff77fde52b43ab9afb332092379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eatingFoodSound: {fileID: 0}
+  eatingNaziSound: {fileID: 0}
 --- !u!1 &344670057
 GameObject:
   m_ObjectHideFlags: 0
@@ -49619,6 +49633,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4186800810156290242, guid: 9729375f92413084da9b4d55c7d17d62,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e129615413c522444b1f485a2cb574a0, type: 2}
     - target: {fileID: 4959827727886509146, guid: 9729375f92413084da9b4d55c7d17d62,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49672,7 +49691,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1589975682376671004, guid: 9729375f92413084da9b4d55c7d17d62,
+        type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 339663404}
   m_SourcePrefab: {fileID: 100100000, guid: 9729375f92413084da9b4d55c7d17d62, type: 3}
 --- !u!1 &951360186
 GameObject:
@@ -50369,6 +50392,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8667f8849183de141937d4263c2874d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogWindow: {fileID: 0}
+  timer: 10
+  gm: {fileID: 0}
+  NeededScore: 1000
 --- !u!70 &1414924261
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

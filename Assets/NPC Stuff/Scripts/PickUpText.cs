@@ -50,15 +50,16 @@ public class PickUpText : MonoBehaviour
     if (pickUpAllowed && Input.GetKeyDown(KeyCode.F) && isEating == false)
     {
       animator.runtimeAnimatorController = FoodController;
-      animator.SetBool("isEating", true);
       
       
         if (isFood)
         {
+          animator.SetBool("isEatingFood", true);
           Invoke(nameof(eatFood), 2f);
         }
         else
         {
+          animator.SetBool("isEatingNazi", true);
           Invoke(nameof(eatNazi), 2f);
         }
       
@@ -77,7 +78,7 @@ public class PickUpText : MonoBehaviour
     {
       gameManager.incrementHP(100 - gameManager.HP % 100);
     }
-    animator.SetBool("isEating", false); // Set isEating to false after eating
+    animator.SetBool("isEatingFood", false); // Set isEating to false after eating
     isEating = false;
   }
 
@@ -118,7 +119,7 @@ public class PickUpText : MonoBehaviour
 
     DealDamage();
     
-    animator.SetBool("isEating", false); // Set isEating to false after eating
+    animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
     isEating = false;
   }
   

@@ -516,9 +516,10 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: 
+    functionName: playEatingFoodSound
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: f73dfff77fde52b43ab9afb332092379, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: f73dfff77fde52b43ab9afb332092379,
+      type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
