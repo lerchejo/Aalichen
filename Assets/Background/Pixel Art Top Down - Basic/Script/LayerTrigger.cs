@@ -14,7 +14,13 @@ namespace Cainos.PixelArtTopDown_Basic
         private void OnTriggerExit2D(Collider2D other)
         {
             other.gameObject.layer = LayerMask.NameToLayer(layer);
+            Debug.LogError("Layer: " + layer + " Sorting Layer: " + sortingLayer);
+            
+            if(layer == "Layer 1")
+            {
+                Debug.Log(other.gameObject.name);
 
+            }
             other.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = sortingLayer;
             SpriteRenderer[] srs = other.gameObject.GetComponentsInChildren<SpriteRenderer>();
             foreach ( SpriteRenderer sr in srs)
