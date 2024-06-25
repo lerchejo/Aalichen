@@ -3,20 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private Vector3 offset;
-    [SerializeField] private float damping;
-
-    
     public Transform target;
-    private Vector3 vc = Vector3.up;
-    // Start is called before the first frame update
-    
-    
-    private void FixedUpdate()
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset;
+
+    void FixedUpdate()
     {
-        var targetPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref vc,damping);
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
     }
 }

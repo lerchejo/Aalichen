@@ -79,6 +79,7 @@ public class LevelUpManager : MonoBehaviour
             selectedUpgrades[0].Apply(GameManager, Movement);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;
+            
 
         });
         Option2Button.onClick.AddListener(() =>
