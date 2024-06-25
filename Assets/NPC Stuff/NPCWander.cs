@@ -41,21 +41,59 @@
             Vector3 direction = moveDirections[currentMoveDirection];
             float xDir = direction.x;
             float yDir = direction.y;
-     
+
             thisTransform.position += direction * Time.deltaTime * moveSpeed;
-     
+
             if (animator)
             {
-                animator.SetFloat("MoveX", xDir);
-                animator.SetFloat("MoveY", yDir);
+                if (direction == Vector3.zero)
+                {
+                    animator.SetBool("Stop", true);
+                    animator.SetBool("Walk Up", false);
+                    animator.SetBool("Walk Down", false);
+                    animator.SetBool("Walk Left", false);
+                    animator.SetBool("Walk Right", false);
+                }
+                else
+                {
+                    animator.SetBool("Stop", false);
+                    if (yDir > 0)
+                    {
+                        animator.SetBool("Walk Up", true);
+                        animator.SetBool("Walk Down", false);
+                        animator.SetBool("Walk Left", false);
+                        animator.SetBool("Walk Right", false);
+                    }
+                    else if (yDir < 0)
+                    {
+                        animator.SetBool("Walk Down", true);
+                        animator.SetBool("Walk Up", false);
+                        animator.SetBool("Walk Left", false);
+                        animator.SetBool("Walk Right", false);
+                    }
+                    else if (xDir < 0)
+                    {
+                        animator.SetBool("Walk Left", true);
+                        animator.SetBool("Walk Up", false);
+                        animator.SetBool("Walk Down", false);
+                        animator.SetBool("Walk Right", false);
+                    }
+                    else if (xDir > 0)
+                    {
+                        animator.SetBool("Walk Right", true);
+                        animator.SetBool("Walk Up", false);
+                        animator.SetBool("Walk Down", false);
+                        animator.SetBool("Walk Left", false);
+                    }
+                }
             }
-     
+
             if (decisionTimeCount > 0) decisionTimeCount -= Time.deltaTime;
             else
             {
                 // Choose a random time delay for taking a decision ( changing direction, or standing in place for a while )
                 decisionTimeCount = Random.Range(decisionTime.x, decisionTime.y);
-     
+
                 // Choose a movement direction, or stay in place
                 ChooseMoveDirection();
             }

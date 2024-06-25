@@ -11,7 +11,7 @@ public class LevelUpManager : MonoBehaviour
     // Start is called before the first frame update
         public GameObject levelUpScreen;
         public GameManager GameManager; // Reference to the GameManager
-        public Movement Movement; // Reference to the MovementScript
+        public NewMovement Movement; // Reference to the MovementScript
 
         public Button Option1Button;
         public Button Option2Button;
@@ -25,7 +25,7 @@ public class LevelUpManager : MonoBehaviour
         public class Upgrade
         {
             public string Name { get; set; }
-            public Action<GameManager, Movement> Apply { get; set; }
+            public Action<GameManager, NewMovement> Apply { get; set; }
         }
     
     

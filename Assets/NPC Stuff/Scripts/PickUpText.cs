@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using Random = UnityEngine.Random;
 
 public class PickUpText : MonoBehaviour
@@ -16,7 +17,7 @@ public class PickUpText : MonoBehaviour
   public HealthBar HealthBar = null;
   public GameObject Parent;
   public Animator animator;
-  
+  public AnimatorController FoodController;
   
   public GameManager gameManager;
 
@@ -48,6 +49,7 @@ public class PickUpText : MonoBehaviour
   {
     if (pickUpAllowed && Input.GetKeyDown(KeyCode.F) && isEating == false)
     {
+      animator.runtimeAnimatorController = FoodController;
       animator.SetBool("isEating", true);
       
       
@@ -76,6 +78,7 @@ public class PickUpText : MonoBehaviour
       gameManager.incrementHP(100 - gameManager.HP % 100);
     }
     animator.SetBool("isEating", false); // Set isEating to false after eating
+    isEating = false;
   }
 
   private void DealDamage()
@@ -116,6 +119,7 @@ public class PickUpText : MonoBehaviour
     DealDamage();
     
     animator.SetBool("isEating", false); // Set isEating to false after eating
+    isEating = false;
   }
   
   private void OnTriggerEnter2D(Collider2D other)
