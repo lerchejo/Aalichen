@@ -17,13 +17,13 @@ public class PickUpText : MonoBehaviour
   public HealthBar HealthBar = null;
   public GameObject Parent;
   public Animator animator;
-  public AnimatorController FoodController;
   
   public GameManager gameManager;
 
   private bool isEating = false;
   private NPC npc;
 
+  public AnimationSound animationSound;
   
 
   private bool pickUpAllowed;
@@ -49,24 +49,15 @@ public class PickUpText : MonoBehaviour
   {
     if (pickUpAllowed && Input.GetKeyDown(KeyCode.F) && isEating == false)
     {
-      animator.runtimeAnimatorController = FoodController;
-      
-      
+      isEating = true;
         if (isFood)
         {
-          eatFood();
+          animationSound.eatingFoodSound.Play();
           Invoke(nameof(eatFood), 2f);
         }
         else
         {
-   
-          animator.SetBool("isEatingFood", false);
-          animator.SetBool("MoveUp", false);
-          animator.SetBool("MoveDown", false);
-          animator.SetBool("MoveSide", false);
-          
-          animator.SetBool("isEatingNazi", true);
-   
+          animationSound.eatingNaziSound.Play();
           Invoke(nameof(eatNazi), 2f);
         }
       
@@ -75,10 +66,6 @@ public class PickUpText : MonoBehaviour
 
   private void eatFood()
   {
-
-          
-    animator.SetBool("isEatingFood", true);
-    
     pickUpText.gameObject.SetActive(false);
     Destroy(Parent.gameObject);
     
@@ -91,7 +78,7 @@ public class PickUpText : MonoBehaviour
       gameManager.incrementHP(100 - gameManager.HP % 100);
     }
     
-    animator.SetBool("isEatingFood", false); // Set isEating to false after eating
+    //animator.SetBool("isEatingFood", false); // Set isEating to false after eating
     isEating = false;
   }
 
@@ -117,7 +104,7 @@ public class PickUpText : MonoBehaviour
   {
 
           
-    animator.SetBool("isEatingNazi", true);
+    //animator.SetBool("isEatingNazi", true);
     
     if (npc.enemies == null || Parent == null)
     {
@@ -136,7 +123,7 @@ public class PickUpText : MonoBehaviour
     isEating = false;
     DealDamage();
     print(animator.name.ToString());
-    animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
+    //animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
     
   }
   
@@ -146,6 +133,7 @@ public class PickUpText : MonoBehaviour
     {
         pickUpText.gameObject.SetActive(true);
         pickUpAllowed = true;
+        print("Player entered");;
     }
   }
   

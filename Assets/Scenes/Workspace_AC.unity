@@ -1456,8 +1456,8 @@ MonoBehaviour:
   HealthBar: {fileID: 2025882793}
   Parent: {fileID: 746594050}
   animator: {fileID: 339663400}
-  FoodController: {fileID: 9100000, guid: e129615413c522444b1f485a2cb574a0, type: 2}
   gameManager: {fileID: 209911329}
+  animationSound: {fileID: 339663404}
 --- !u!212 &258710059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3156,7 +3156,7 @@ Transform:
   m_GameObject: {fileID: 746594050}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 88.16, y: -17.75, z: -0.40526703}
+  m_LocalPosition: {x: 104.07, y: -17.55, z: -0.40526703}
   m_LocalScale: {x: 0.5, y: 0.5, z: 10.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50999,6 +50999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sounds
       objectReference: {fileID: 0}
+    - target: {fileID: 4927193010004621207, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7015196487674890174, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52863,6 +52868,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3185393476552462056, guid: 7a1592dd3c2cdef44b5c54dd02333f6d,
+        type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4000706934696953716, guid: 7a1592dd3c2cdef44b5c54dd02333f6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52938,6 +52948,11 @@ PrefabInstance:
       propertyPath: FoodController
       value: 
       objectReference: {fileID: 9100000, guid: e129615413c522444b1f485a2cb574a0, type: 2}
+    - target: {fileID: 8525567617143035561, guid: 7a1592dd3c2cdef44b5c54dd02333f6d,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
