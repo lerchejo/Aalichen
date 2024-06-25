@@ -2549,7 +2549,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.94, y: -18.5, z: -10}
+  m_LocalPosition: {x: 110.07, y: -15.43, z: -10}
   m_LocalScale: {x: 2.0917, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3687,6 +3687,11 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[11].Y
       value: 100000000
       objectReference: {fileID: 0}
+    - target: {fileID: 1759686096173015974, guid: db04e31d468a40949af84c9d0e9e7349,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2742771787478725545, guid: db04e31d468a40949af84c9d0e9e7349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3946,6 +3951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[33].second.m_TileSpriteIndex
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867597849663941622, guid: db04e31d468a40949af84c9d0e9e7349,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7994470399100657308, guid: db04e31d468a40949af84c9d0e9e7349,
         type: 3}
@@ -50351,7 +50361,7 @@ Transform:
   m_GameObject: {fileID: 1414924257}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7056872, w: 0.7085236}
-  m_LocalPosition: {x: 87.39, y: -39.71, z: 0}
+  m_LocalPosition: {x: 128.84, y: -39.77, z: 0}
   m_LocalScale: {x: 4.1789846, y: 3.0516758, z: 1.5127}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50369,6 +50379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8667f8849183de141937d4263c2874d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogWindow: {fileID: 0}
+  timer: 10
+  gm: {fileID: 209911329}
+  NeededScore: 1000
 --- !u!70 &1414924261
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

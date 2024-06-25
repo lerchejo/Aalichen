@@ -67,6 +67,8 @@ public class PickUpText : MonoBehaviour
 
   private void eatFood()
   {
+    
+    print("eat Food");
     pickUpText.gameObject.SetActive(false);
     Destroy(Parent.gameObject);
     if (gameManager.HP <= 900)
@@ -106,7 +108,7 @@ public class PickUpText : MonoBehaviour
       //Debug.LogError("NPC, NPC enemies list, or Parent is null");
       return;
     }
-
+    print("eat Nazi");
    
     
     if (this == null)
@@ -126,6 +128,8 @@ public class PickUpText : MonoBehaviour
   {
     if (other.CompareTag("Player"))
     {
+      print("eat Food");
+
         pickUpText.gameObject.SetActive(true);
         pickUpAllowed = true;
     }
