@@ -24,7 +24,7 @@ public class NaziSounds : MonoBehaviour
             float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
 
             // If the enemy is within range
-            if (distanceToEnemy < 4.0f && timePassed > 3.0f)
+            if (distanceToEnemy < 5.0f && distanceToEnemy > 4.5f && timePassed > 3.0f)
             {
                 print("in Range to play NaziSound");
                 int randomIndex = UnityEngine.Random.Range(0, naziSounds.Length);
