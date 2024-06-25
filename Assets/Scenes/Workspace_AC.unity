@@ -1455,7 +1455,7 @@ MonoBehaviour:
   Enemy: {fileID: 746594059}
   HealthBar: {fileID: 2025882793}
   Parent: {fileID: 746594050}
-  animator: {fileID: 0}
+  animator: {fileID: 339663400}
   FoodController: {fileID: 9100000, guid: c6ca24ec04cab406c9e109c785493131, type: 2}
   gameManager: {fileID: 209911329}
 --- !u!212 &258710059
@@ -1836,6 +1836,12 @@ RectTransform:
 --- !u!1 &339663396 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1589975682376671004, guid: 9729375f92413084da9b4d55c7d17d62,
+    type: 3}
+  m_PrefabInstance: {fileID: 928344182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &339663400 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4186800810156290242, guid: 9729375f92413084da9b4d55c7d17d62,
     type: 3}
   m_PrefabInstance: {fileID: 928344182}
   m_PrefabAsset: {fileID: 0}
@@ -52785,7 +52791,7 @@ PrefabInstance:
         type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 339663400}
     - target: {fileID: 8525567617143035561, guid: 7a1592dd3c2cdef44b5c54dd02333f6d,
         type: 3}
       propertyPath: pickUpText
