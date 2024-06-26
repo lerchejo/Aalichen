@@ -52,13 +52,16 @@ public class PickUpText : MonoBehaviour
       isEating = true;
         if (isFood)
         {
+          //animator.SetBool("isEatingFood", true);
           animationSound.eatingFoodSound.Play();
-          Invoke(nameof(eatFood), 1.5f);
+          eatFood();
+          
         }
         else
         {
           animationSound.eatingNaziSound.Play();
-          Invoke(nameof(eatNazi), 2f);
+          
+          eatNazi();
         }
       
     }
@@ -87,10 +90,15 @@ public class PickUpText : MonoBehaviour
     Enemy.Health -= gameManager.Damage;
     HealthBar.SetHealth(Enemy.Health);
 
+    Invoke(nameof(killNazi), 1.5f);
+  }
+
+  public void killNazi()
+  {
+    
     GameObject enemyToBeEaten = Parent.gameObject;
     var random = Random.Range(1, 10);
- 
-
+    
     if (Enemy.Health <= 0f)
     {
       gameManager.incrementXP(Random.Range(5, 20));
@@ -106,23 +114,10 @@ public class PickUpText : MonoBehaviour
           
     //animator.SetBool("isEatingNazi", true);
     
-    if (npc.enemies == null || Parent == null)
-    {
-      //Debug.LogError("NPC, NPC enemies list, or Parent is null");
-      return;
-    }
 
-   
-    
-    if (this == null)
-    {
-      Debug.LogError("NPC is null, cannot deal damage");
-      return;
-    }
     pickUpText.gameObject.SetActive(false);
     isEating = false;
     DealDamage();
-    print(animator.name.ToString());
     //animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
     
   }

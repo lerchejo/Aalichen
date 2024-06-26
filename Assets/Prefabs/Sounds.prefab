@@ -178,6 +178,7 @@ Transform:
   - {fileID: 4952552323879992131}
   - {fileID: 6232648726389305214}
   - {fileID: 504893227156200892}
+  - {fileID: 1767431767749592234}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3357756436128218434
@@ -308,6 +309,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &4684458967738491613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1767431767749592234}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1767431767749592234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4684458967738491613}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 104.87832, y: -17.62301, z: -0.8550347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7015196487674890174}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &265373348987580115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,6 +352,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: eatingFood
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf,
+        type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf,
+        type: 3}
+      propertyPath: Priority
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 5174121710892243268, guid: 3a55eb59faa4b844b8c4217fc07f1caf,
         type: 3}

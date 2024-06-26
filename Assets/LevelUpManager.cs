@@ -35,9 +35,9 @@ public class LevelUpManager : MonoBehaviour
         new Upgrade { Name = "Increase Health", Apply = (gm, mv) => gm.HP +=  Random.Range(25, 75) },
         new Upgrade { Name = "Gain Coins", Apply = (gm, mv) => gm.coins += Random.Range(10, 50)},
         new Upgrade { Name = "Increase Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) },
-        new Upgrade { Name = "Dash Duration", Apply = (gm, mv) => mv.dashDuration += Random.Range(0.2f, 0.4f) },
+        new Upgrade { Name = "Dash Duration", Apply = (gm, mv) => mv.dashDuration += Random.Range(0.1f, 0.2f) },
         new Upgrade { Name = "Increase Dash Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) },
-        new Upgrade { Name = "Increase Player Strength", Apply = (gm, mv) => gm.Damage += Random.Range(5,10) }
+        new Upgrade { Name = "Increase Player Strength", Apply = (gm, mv) => gm.Damage += Random.Range(5, 10) }
 
     };
     
