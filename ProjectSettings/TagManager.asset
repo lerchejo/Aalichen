@@ -4,13 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - canvas
+  - Enemy
+  - NPC
+  - Food
   - resources
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
@@ -27,9 +29,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -43,6 +45,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: itemDisplay
-    uniqueID: 1742671271
+  - name: Layer 1
+    uniqueID: 2425651459
+    locked: 0
+  - name: Layer 2
+    uniqueID: 4250941897
+    locked: 0
+  - name: Layer 3
+    uniqueID: 4189426099
+    locked: 0
+  - name: Background
+    uniqueID: 2020101591
+    locked: 0
+  - name: Ground
+    uniqueID: 3411320243
     locked: 0
