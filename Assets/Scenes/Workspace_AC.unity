@@ -279,6 +279,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46344190}
   m_CullTransparentMesh: 1
+--- !u!82 &64951261 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2730473121779145982, guid: a60c19f54b74512409baea4bdfb9f98d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1687592462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &111026851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1391,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -1911,6 +1937,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2073,6 +2119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eatingFoodSound: {fileID: 744260474}
   eatingNaziSound: {fileID: 1316469677}
+  runningSound: {fileID: 64951261}
 --- !u!114 &339663410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2279,6 +2326,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -2992,6 +3059,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -63249,6 +63336,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -63963,6 +64070,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -64306,6 +64433,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -64824,6 +64971,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -65531,10 +65698,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2730473121779145982, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a5b56d09c245c4f4a9451498fe6f7ce6, type: 3}
+    - target: {fileID: 2730473121779145982, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3113216726289408113, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
       propertyPath: m_Name
       value: Sounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375668545770275520, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595578731081886983, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157972209973817611, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4927193010004621207, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
@@ -65616,13 +65808,24 @@ PrefabInstance:
       propertyPath: Priority
       value: 202
       objectReference: {fileID: 0}
+    - target: {fileID: 7599346551945175852, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b4d7047c0a6c84e4d84fffe17e64b8c5, type: 3}
     - target: {fileID: 8685195897106524714, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
       propertyPath: m_Volume
       value: 0.354
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5352834893704769132, guid: a60c19f54b74512409baea4bdfb9f98d, type: 3}
+    - {fileID: 4386540720127138217, guid: a60c19f54b74512409baea4bdfb9f98d, type: 3}
+    - {fileID: 2824464254973994237, guid: a60c19f54b74512409baea4bdfb9f98d, type: 3}
+    - {fileID: 401472538124588360, guid: a60c19f54b74512409baea4bdfb9f98d, type: 3}
+    - {fileID: 6417412438486035473, guid: a60c19f54b74512409baea4bdfb9f98d, type: 3}
+    - {fileID: 8224386241251622400, guid: a60c19f54b74512409baea4bdfb9f98d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7015196487674890174, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
@@ -65967,6 +66170,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -67548,6 +67771,26 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
     - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_SortingLayerID
