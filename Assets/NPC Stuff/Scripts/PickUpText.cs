@@ -24,8 +24,9 @@ public class PickUpText : MonoBehaviour
   private NPC npc;
 
   public AnimationSound animationSound;
+  [SerializeField] private AudioSource[] naziSounds;
+  private AudioSource currentSound;
   
-
   private bool pickUpAllowed;
 
   private void Start()
@@ -42,6 +43,9 @@ public class PickUpText : MonoBehaviour
     {
       HealthBar.SetMaxHealth(Enemy.Health);
     }
+    
+    // Initialize currentSound to be able to check if it is playing
+    currentSound = naziSounds[0];
     
     
   }
@@ -87,6 +91,14 @@ public class PickUpText : MonoBehaviour
 
   private void DealDamage()
   {
+    // Play random Nazi Sound if it is the first time the enemy is hit
+    if (Enemy.Health >= 50)
+    {
+      int randomIndex = UnityEngine.Random.Range(0, naziSounds.Length);
+      naziSounds[randomIndex].Play();
+      currentSound = naziSounds[randomIndex];
+    }
+    
     Enemy.Health -= gameManager.Damage;
     HealthBar.SetHealth(Enemy.Health);
 

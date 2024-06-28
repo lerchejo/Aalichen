@@ -6,6 +6,7 @@ public class AnimationSound : MonoBehaviour
 {
     public AudioSource eatingFoodSound;
     public AudioSource eatingNaziSound;
+    public AudioSource runningSound;
     
     public void playEatingFoodSound()
     {
@@ -21,6 +22,14 @@ public class AnimationSound : MonoBehaviour
         if (!eatingNaziSound.isPlaying)
         {
             eatingNaziSound.Play();
+        }
+    }
+    
+    public void playRunningSound()
+    {
+        if (!runningSound.isPlaying)
+        {
+            runningSound.Play();
         }
     }
 }
