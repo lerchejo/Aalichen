@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -33,6 +34,7 @@ public class NPC : MonoBehaviour
 
     private GameObject target; // The enemy that the NPC is currently following
 
+    public TextMeshProUGUI EnemyCounter;
 
     //private ShopDisplay Shopdisplay;
     private void Start()
@@ -52,6 +54,7 @@ public class NPC : MonoBehaviour
     
     private void Update()
     {
+        EnemyCounter.SetText("Enemies: " + enemies.Count);
         // List to store enemies with aggro
         List<GameObject> aggroEnemies = new List<GameObject>();
         
