@@ -129,6 +129,204 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1687592462}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1797638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.40526703
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &32386281
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,10 +1044,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2747,6 +2945,204 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570782092}
   m_CullTransparentMesh: 1
+--- !u!1001 &583452103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -22.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &684100877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,11 +3272,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 169534709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -810.3783, y: 335.3723}
-  m_SizeDelta: {x: 299.2434, y: 41.1885}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -164}
+  m_SizeDelta: {x: 299.2434, y: 41.188477}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &686327588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,6 +3492,204 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1687592462}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &760875236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.40526703
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &806128584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,8 +3808,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -184.01498, y: -130}
-  m_SizeDelta: {x: 368.03, y: 64.33441}
+  m_AnchoredPosition: {x: -284.96997, y: -98.61395}
+  m_SizeDelta: {x: 569.94, y: 52.7498}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &836084786
 MonoBehaviour:
@@ -62749,6 +63343,204 @@ MonoBehaviour:
   Option1Text: {fileID: 134835347}
   Option2Text: {fileID: 2045295902}
   Option3Text: {fileID: 111026853}
+--- !u!1001 &967183082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!82 &1016839608 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2767132949105661467, guid: a60c19f54b74512409baea4bdfb9f98d,
@@ -63033,6 +63825,204 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097051593}
   m_CullTransparentMesh: 1
+--- !u!1001 &1127810006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -22.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &1144137039
 GameObject:
   m_ObjectHideFlags: 0
@@ -63166,6 +64156,204 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6945dd652086e7645bbc2b3ad03563cf, type: 3}
+--- !u!1001 &1225807089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -18.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &1237529006
 GameObject:
   m_ObjectHideFlags: 0
@@ -63278,8 +64466,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -184.0163, y: 0}
-  m_SizeDelta: {x: 368.0326, y: 64.33441}
+  m_AnchoredPosition: {x: -284.9679, y: 0}
+  m_SizeDelta: {x: 569.9358, y: 50.833}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1254860557
 MonoBehaviour:
@@ -63594,6 +64782,204 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1687592462}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1322560817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.40526703
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!82 &1325250343 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3595578731081886983, guid: a60c19f54b74512409baea4bdfb9f98d,
@@ -65133,7 +66519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 26.648956}
+  m_AnchoredPosition: {x: 0, y: 26.649048}
   m_SizeDelta: {x: 411.84033, y: 53.297913}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1762434516
@@ -65788,6 +67174,204 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896105631}
   m_CullTransparentMesh: 1
+--- !u!1001 &1926918044
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &1943364291
 GameObject:
   m_ObjectHideFlags: 0
@@ -66056,6 +67640,204 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045295900}
   m_CullTransparentMesh: 1
+--- !u!1001 &2046227655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 339663400}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.4919748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.787775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.007917881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3801298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993295208826633856, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6730086374252727735, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663396}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 209911329}
+    - target: {fileID: 6930585698209067326, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1503930073021539149}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b65b1c1bb9481843ba612e0ed03983e, type: 3}
 --- !u!1 &2069910819
 GameObject:
   m_ObjectHideFlags: 0
@@ -66956,3 +68738,12 @@ SceneRoots:
   - {fileID: 852668675}
   - {fileID: 1687592462}
   - {fileID: 2956707611850831749}
+  - {fileID: 760875236}
+  - {fileID: 967183082}
+  - {fileID: 1926918044}
+  - {fileID: 2046227655}
+  - {fileID: 583452103}
+  - {fileID: 1225807089}
+  - {fileID: 1127810006}
+  - {fileID: 1797638}
+  - {fileID: 1322560817}
