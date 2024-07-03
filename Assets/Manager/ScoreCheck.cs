@@ -96,7 +96,6 @@ public class ScoreCheck : MonoBehaviour
     {
         dialogWindow.SetText(text);
         dialogWindow.gameObject.SetActive(true);
-        
     }
 
     private void OnTriggerStay2D(Collider2D other)

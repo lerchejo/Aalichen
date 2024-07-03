@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 {
    
     public GameObject deathScreen;
+    public AudioSource deathSound;
     
     public void ReloadLevel()
     {
@@ -36,6 +37,7 @@ public class LevelManager : MonoBehaviour
     
     public void enableDeathScreen()
     {
+        deathSound.Play();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         deathScreen.SetActive(true);

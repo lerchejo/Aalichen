@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
             if (gameManager.HP < 0)
             {
                 Time.timeScale = 0f;
+                
                 levelManager.enableDeathScreen();
                 try
                 {
