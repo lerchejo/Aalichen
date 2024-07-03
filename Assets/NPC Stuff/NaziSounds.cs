@@ -16,25 +16,25 @@ public class NaziSounds : MonoBehaviour
         currentSound = naziSounds[0];
     }
     
-    private void Update()
-    {
-        foreach (GameObject enemy in npc.enemies)
-        {
-            // Calculate the distance to the enemy
-            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-
-            // If the enemy is within range
-            if (distanceToEnemy < 5.0f && distanceToEnemy > 4.5f && !currentSound.isPlaying)
-            {
-                print("in Range to play NaziSound");
-                int randomIndex = UnityEngine.Random.Range(0, naziSounds.Length);
-                naziSounds[randomIndex].Play();
-                currentSound = naziSounds[randomIndex];
-                timePassed = 0.0f;
-            }
-        }
-        // increment timePassed
-        timePassed += Time.deltaTime;
-    }
-    
+    // private void Update()
+    // {
+    //     foreach (GameObject enemy in npc.enemies)
+    //     {
+    //         // Calculate the distance to the enemy
+    //         float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+    //
+    //         // If the enemy is within range
+    //         if (distanceToEnemy < 5.0f && distanceToEnemy > 4.5f && !currentSound.isPlaying)
+    //         {
+    //             print("in Range to play NaziSound");
+    //             int randomIndex = UnityEngine.Random.Range(0, naziSounds.Length);
+    //             naziSounds[randomIndex].Play();
+    //             currentSound = naziSounds[randomIndex];
+    //             timePassed = 0.0f;
+    //         }
+    //     }
+    //     // increment timePassed
+    //     timePassed += Time.deltaTime;
+    // }
+    //
 }

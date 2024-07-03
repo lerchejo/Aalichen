@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4959827727886509146}
   - component: {fileID: 6385607587867505332}
   - component: {fileID: 3431530210272473878}
+  - component: {fileID: 4905104319775795706}
   - component: {fileID: 4186800810156290242}
   - component: {fileID: 3212177568277488573}
   - component: {fileID: 3374833528392912078}
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1cff7ec1835904d178ab1183743ccee9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -107,6 +108,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &4905104319775795706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589975682376671004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a85fb5e6acfbf34b8989011c7235b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageSound: {fileID: 0}
 --- !u!95 &4186800810156290242
 Animator:
   serializedVersion: 5
@@ -140,12 +154,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd1901f60dc6bb4c8f0b6fe2298754f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpAnimator: {fileID: 9100000, guid: aa29453830fa84c57a3d0d14051feb41, type: 2}
-  DownAnimator: {fileID: 9100000, guid: 189935c04078b4d66abffacc46675d23, type: 2}
-  SideAnimator: {fileID: 9100000, guid: 4888d461382cf47e09dc4c7c18ea5302, type: 2}
   runSpeed: 3
-  dashSpeed: 10
-  dashDuration: 0.25
+  dashSpeed: 5
+  dashDuration: 0.2
+  dashCooldown: 3
 --- !u!50 &3374833528392912078
 Rigidbody2D:
   serializedVersion: 4

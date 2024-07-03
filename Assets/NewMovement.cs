@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
+using UnityEngine.UI;
+using Slider = UnityEngine.UI.Slider;
 
 public class NewMovement : MonoBehaviour
 {
     Rigidbody2D body;
-
+        
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
@@ -21,7 +25,10 @@ public class NewMovement : MonoBehaviour
     private bool isDashing = false; // Flag to check if dashing
     public float dashDuration = 0.25f; // How long the dash should last
     private Coroutine currentDashCoroutine;
-
+    public float dashCooldown = 1.0f; // Cooldown duration in seconds
+    private float lastDashTime = -1.0f; // Time when the last dash occurred
+    
+    public Slider CooldownSlider;
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -31,6 +38,12 @@ public class NewMovement : MonoBehaviour
 
     void Update()
     {
+        
+        float timeUntilNextDash = Mathf.Max(0, lastDashTime + dashCooldown - Time.time);
+
+        // Update the value of the slider
+        CooldownSlider.value = 1 - timeUntilNextDash / dashCooldown;
+        
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
@@ -94,7 +107,7 @@ public class NewMovement : MonoBehaviour
 
 
             // Check if space bar is being held down
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && Time.time >= lastDashTime + dashCooldown)
             {
                 // If a dash is already in progress, stop it
                 if (currentDashCoroutine != null)
@@ -104,6 +117,9 @@ public class NewMovement : MonoBehaviour
 
                 // Start a new dash
                 currentDashCoroutine = StartCoroutine(Dash());
+
+                // Update the time of the last dash
+                lastDashTime = Time.time;
             }
         }
 
