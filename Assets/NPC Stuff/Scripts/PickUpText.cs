@@ -12,6 +12,7 @@ public class PickUpText : MonoBehaviour
   [SerializeField] private TextMeshProUGUI pickUpText;
   //[SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
+  private bool isBeer;
   
   public Enemy Enemy = null;
   public HealthBar HealthBar = null;
@@ -23,6 +24,7 @@ public class PickUpText : MonoBehaviour
   private bool isEating = false;
   private NPC npc;
 
+  
   public AnimationSound animationSound;
   
 
@@ -32,11 +34,17 @@ public class PickUpText : MonoBehaviour
   {
     npc = FindObjectOfType<NPC>();
     pickUpText.gameObject.SetActive(false);
-    
+
     if (isFood)
     {
       Enemy = null;
       HealthBar = null;
+
+      // Determine if the object is beer
+      if (gameObject.name.Contains("Bier"))
+      {
+        isBeer = true;
+      }
     }
     else
     {
@@ -52,8 +60,16 @@ public class PickUpText : MonoBehaviour
       isEating = true;
         if (isFood)
         {
-          //animator.SetBool("isEatingFood", true);
-          animationSound.eatingFoodSound.Play();
+          //Play the right sound
+          if (isBeer)
+          {
+            animationSound.drinkingBeerSound.Play();
+          }
+          else
+          {
+            animationSound.eatingFoodSound.Play();
+          }
+          
           eatFood();
           
         }
