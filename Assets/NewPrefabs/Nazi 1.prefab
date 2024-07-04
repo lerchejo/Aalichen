@@ -59,7 +59,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -1869315837
+  m_SortingLayerID: -44025399
   m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &3290396052607755708
@@ -490,7 +490,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -44025399
   m_SortingLayer: 2
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 2573f45d7ff15124a84ae6d0e8521af1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -692,7 +692,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0605f9610ef25a49830d5a60b066e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  naziSounds: []
+  naziSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   npc: {fileID: 0}
 --- !u!1 &7439689070603719745
 GameObject:
@@ -760,7 +763,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000076293945, y: 1.3156052}
+  m_Offset: {x: -0.007917881, y: 0.3801298}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -771,7 +774,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2224274, y: 1.9168243}
+  m_Size: {x: 2.4919748, y: 3.787775}
   m_EdgeRadius: 0
 --- !u!114 &1177968385842307741
 MonoBehaviour:
@@ -793,6 +796,10 @@ MonoBehaviour:
   animator: {fileID: 0}
   gameManager: {fileID: 0}
   animationSound: {fileID: 0}
+  naziSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &8761137475746067418
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -146,7 +146,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -1579,7 +1579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &290663551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1594,11 +1594,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 169534709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96, y: 349}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -95, y: -7}
   m_SizeDelta: {x: 598.6647, y: 169.13}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &290663552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2883,8 +2883,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255362
+  m_fontColor: {r: 0.006026864, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2968,7 +2968,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -3520,7 +3520,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -63376,7 +63376,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -63741,7 +63741,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -64078,7 +64078,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -64709,7 +64709,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -65178,6 +65178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogWindow: {fileID: 290663552}
+  pressE: {fileID: 570782094}
   timer: 10
   gm: {fileID: 209911329}
   busSound: {fileID: 1089821548}
@@ -67031,7 +67032,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -67508,7 +67509,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -68279,7 +68280,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pickUpText
       value: 
-      objectReference: {fileID: 290663552}
+      objectReference: {fileID: 570782094}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: gameManager
@@ -68290,11 +68291,6 @@ PrefabInstance:
       propertyPath: animationSound
       value: 
       objectReference: {fileID: 339663404}
-    - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: naziSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1177968385842307741, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: naziSounds.Array.data[0]
@@ -68310,31 +68306,6 @@ PrefabInstance:
       propertyPath: naziSounds.Array.data[2]
       value: 
       objectReference: {fileID: 862374}
-    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.4919748
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 3.787775
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.007917881
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270681632836326047, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.3801298
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780679738695844072, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -44025399
-      objectReference: {fileID: 0}
     - target: {fileID: 5975203602011040238, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -68382,11 +68353,6 @@ PrefabInstance:
       objectReference: {fileID: 1503930073021539149}
     - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
-      propertyPath: naziSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7000147367404735917, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
       propertyPath: naziSounds.Array.data[0]
       value: 
       objectReference: {fileID: 862374}
@@ -68400,11 +68366,6 @@ PrefabInstance:
       propertyPath: naziSounds.Array.data[2]
       value: 
       objectReference: {fileID: 1325250343}
-    - target: {fileID: 7915539596826053398, guid: 0b65b1c1bb9481843ba612e0ed03983e,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 9179970983735639374, guid: 0b65b1c1bb9481843ba612e0ed03983e,
         type: 3}
       propertyPath: m_LocalPosition.x

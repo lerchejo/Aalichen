@@ -12,6 +12,7 @@ public class ScoreCheck : MonoBehaviour
     //This is temporary; replace with the right one
 
     public TextMeshProUGUI dialogWindow;
+    public TextMeshProUGUI pressE;
 
     public float timer = 10;
     private float currentTimer = 100;
@@ -102,12 +103,13 @@ public class ScoreCheck : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            pressE.SetText("Joo, drück mal E!");
+            pressE.gameObject.SetActive(true);
             if (LevelCleared && Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(player);
                 animator.SetBool("DriveOff", true);
                 StartCoroutine(ChangeScene());
-
             }
         }
        
