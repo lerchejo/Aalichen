@@ -46,6 +46,8 @@
 
             if (animator)
             {
+
+                
                 if (direction == Vector3.zero)
                 {
                     animator.SetBool("Stop", true);
