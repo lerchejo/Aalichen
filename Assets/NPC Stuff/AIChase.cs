@@ -11,6 +11,7 @@ public class AIChase : MonoBehaviour
     public float distanceToPlayer = 10.0f;
     private float _distance;
     public float roationSpeed = 0.5f;
+    public Player Player;
 
     public GameManager GameManager;
     
@@ -21,7 +22,7 @@ public class AIChase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.HP <= 0) return;
+        if(Player.HP <= 0) return;
         _distance = Vector2.Distance(player.transform.position, transform.position);
         Vector2 direction = player.transform.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

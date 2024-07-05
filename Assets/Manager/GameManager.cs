@@ -7,7 +7,6 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public int HP = 1000;
     public int XP = 0;
     public int Damage = 10;
     public int coins = 0;
@@ -18,7 +17,6 @@ public class GameManager : MonoBehaviour
     // New variable for XP thresholds for each level
     public int[] levelThresholds = new int[] {0, 10, 100, 500, 1000};
     
-    public HealthBar healthBar;
     public ExperienceBar experienceBar;
 
     [SerializeField] private TextMeshProUGUI LevelText;
@@ -27,16 +25,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         LevelText.SetText("Level: " + level);
-        healthBar.SetMaxHealth(HP);
         experienceBar.SetXP(1);
         experienceBar.SetMaxXP(levelThresholds[1]);
     }
 
-    public void incrementHP(int value)
-    {
-        HP += value;
-        healthBar.SetHealth(HP);
-    }
+ 
 
     public void incrementXP(int value)
     {
@@ -51,12 +44,7 @@ public class GameManager : MonoBehaviour
         coins += value;
     }
 
-    public void decrementHP(int value)
-    {
-        HP -= value;
-        healthBar.SetHealth(HP);
-    }
-
+   
     public void decrementCoins(int value)
     {
         coins -= value;
