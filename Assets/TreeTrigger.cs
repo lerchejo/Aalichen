@@ -44,7 +44,6 @@ public class TreeTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
             StartCoroutine(Await());
             
             Debug.Log("Player is no longer near the tree");

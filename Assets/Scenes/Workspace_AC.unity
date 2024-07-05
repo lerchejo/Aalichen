@@ -1668,7 +1668,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52dd246a0d8134444b2afb5a4cd81be5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1676,7 +1676,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0.9245283, b: 0.08585719, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_margin: {x: -3.9374084, y: -0.57714844, z: -4.2426147, w: 2.399292}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &290663553
@@ -2223,6 +2223,7 @@ MonoBehaviour:
   eatingFoodSound: {fileID: 744260474}
   eatingNaziSound: {fileID: 1316469677}
   runningSound: {fileID: 64951261}
+  drinkingBeerSound: {fileID: 349419743}
 --- !u!114 &339663411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,6 +2421,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344670057}
   m_CullTransparentMesh: 1
+--- !u!82 &349419743 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 538268200012623173, guid: a60c19f54b74512409baea4bdfb9f98d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1687592462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!213 &387949729
 Sprite:
   m_ObjectHideFlags: 0
@@ -3182,15 +3189,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Joo dr\xFCck mal F!!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52dd246a0d8134444b2afb5a4cd81be5, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 52dd246a0d8134444b2afb5a4cd81be5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278250516
+  m_fontColor: {r: 0.076518126, g: 0.9245283, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -69427,6 +69434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathScreen: {fileID: 238519051}
+  deathSound: {fileID: 0}
 --- !u!4 &1144137041
 Transform:
   m_ObjectHideFlags: 0
@@ -70257,6 +70265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogWindow: {fileID: 290663552}
+  pressE: {fileID: 0}
   timer: 10
   gm: {fileID: 209911329}
   busSound: {fileID: 1089821548}
@@ -71286,6 +71295,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 538268200012623173, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.636
+      objectReference: {fileID: 0}
     - target: {fileID: 1178638586066832433, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
       propertyPath: m_Volume
@@ -71293,8 +71307,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1705240523012369846, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705240523012369846, guid: a60c19f54b74512409baea4bdfb9f98d,
+        type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1705240523012369846, guid: a60c19f54b74512409baea4bdfb9f98d,
         type: 3}
