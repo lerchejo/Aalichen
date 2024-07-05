@@ -17,6 +17,7 @@ public class PickUpText : MonoBehaviour
   public HealthBar HealthBar = null;
   public GameObject Parent;
   public Animator animator;
+  public Player player;
   
   public GameManager gameManager;
 
@@ -41,7 +42,7 @@ public class PickUpText : MonoBehaviour
     }
     else
     {
-      HealthBar.SetMaxHealth(Enemy.Health);
+      HealthBar.SetMaxHealth(Enemy.health);
     }
     
     // Initialize currentSound to be able to check if it is playing
@@ -76,13 +77,13 @@ public class PickUpText : MonoBehaviour
     pickUpText.gameObject.SetActive(false);
     Destroy(Parent.gameObject);
     
-    if (gameManager.HP <= 900)
+    if (player.HP <= 900)
     {
-      gameManager.incrementHP(100);
+      player.incrementHP(100);
     }
-    else if (gameManager.HP > 900 && gameManager.HP % 100 != 0)
+    else if (player.HP > 900 && player.HP % 100 != 0)
     {
-      gameManager.incrementHP(100 - gameManager.HP % 100);
+      player.incrementHP(100 - player.HP % 100);
     }
     
     //animator.SetBool("isEatingFood", false); // Set isEating to false after eating
@@ -92,15 +93,15 @@ public class PickUpText : MonoBehaviour
   private void DealDamage()
   {
     // Play random Nazi Sound if it is the first time the enemy is hit
-    if (Enemy.Health >= 50)
+    if (Enemy.health >= 50)
     {
       int randomIndex = UnityEngine.Random.Range(0, naziSounds.Length);
       naziSounds[randomIndex].Play();
       currentSound = naziSounds[randomIndex];
     }
     
-    Enemy.Health -= gameManager.Damage;
-    HealthBar.SetHealth(Enemy.Health);
+    Enemy.health -= gameManager.Damage;
+    HealthBar.SetHealth(Enemy.health);
 
     Invoke(nameof(killNazi), 1.5f);
   }
@@ -111,7 +112,7 @@ public class PickUpText : MonoBehaviour
     GameObject enemyToBeEaten = Parent.gameObject;
     var random = Random.Range(1, 10);
     
-    if (Enemy.Health <= 0f)
+    if (Enemy.health <= 0f)
     {
       gameManager.incrementXP(Random.Range(5, 20));
       gameManager.incrementCoins(random);

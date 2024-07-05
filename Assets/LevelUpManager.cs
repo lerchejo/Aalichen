@@ -12,6 +12,7 @@ public class LevelUpManager : MonoBehaviour
         public GameObject levelUpScreen;
         public GameManager GameManager; // Reference to the GameManager
         public NewMovement Movement; // Reference to the MovementScript
+        public Player Player; // Reference to the MovementScript
 
         public Button Option1Button;
         public Button Option2Button;
@@ -25,19 +26,19 @@ public class LevelUpManager : MonoBehaviour
         public class Upgrade
         {
             public string Name { get; set; }
-            public Action<GameManager, NewMovement> Apply { get; set; }
+            public Action<GameManager, NewMovement, Player> Apply { get; set; }
         }
     
     
 
     private Upgrade[] upgrades = new Upgrade[]
     {
-        new Upgrade { Name = "Increase Health", Apply = (gm, mv) => gm.HP +=  Random.Range(25, 75) },
-        new Upgrade { Name = "Gain Coins", Apply = (gm, mv) => gm.coins += Random.Range(10, 50)},
-        new Upgrade { Name = "Increase Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) },
-        new Upgrade { Name = "Dash Duration", Apply = (gm, mv) => mv.dashDuration += Random.Range(0.1f, 0.2f) },
-        new Upgrade { Name = "Increase Dash Speed", Apply = (gm, mv) => mv.runSpeed += Random.Range(1, 2) },
-        new Upgrade { Name = "Increase Player Strength", Apply = (gm, mv) => gm.Damage += Random.Range(5, 10) }
+        new Upgrade { Name = "Increase Health", Apply = (gm, mv, pl) => pl.HP +=  Random.Range(25, 75) },
+        new Upgrade { Name = "Gain Coins", Apply = (gm, mv, pl) => gm.coins += Random.Range(10, 50)},
+        new Upgrade { Name = "Increase Speed", Apply = (gm, mv, pl) => mv.runSpeed += Random.Range(1, 2) },
+        new Upgrade { Name = "Dash Duration", Apply = (gm, mv, pl) => mv.dashDuration += Random.Range(0.1f, 0.2f) },
+        new Upgrade { Name = "Increase Dash Speed", Apply = (gm, mv, pl) => mv.runSpeed += Random.Range(1, 2) },
+        new Upgrade { Name = "Increase Player Strength", Apply = (gm, mv, pl) => gm.Damage += Random.Range(5, 10) }
 
     };
     
@@ -76,7 +77,7 @@ public class LevelUpManager : MonoBehaviour
         // Assign each button to apply a different upgrade
         Option1Button.onClick.AddListener(() =>
         {
-            selectedUpgrades[0].Apply(GameManager, Movement);
+            selectedUpgrades[0].Apply(GameManager, Movement, Player);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;
             
@@ -84,14 +85,14 @@ public class LevelUpManager : MonoBehaviour
         });
         Option2Button.onClick.AddListener(() =>
         {
-            selectedUpgrades[1].Apply(GameManager, Movement);
+            selectedUpgrades[1].Apply(GameManager, Movement, Player);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;
 
         });
         Option3Button.onClick.AddListener(() =>
         {
-            selectedUpgrades[2].Apply(GameManager, Movement);
+            selectedUpgrades[2].Apply(GameManager, Movement,Player);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;
 
