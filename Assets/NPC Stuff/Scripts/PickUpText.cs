@@ -156,7 +156,7 @@ public class PickUpText : MonoBehaviour
     {
         pickUpText.gameObject.SetActive(true);
         pickUpAllowed = true;
-        print("Player entered");;
+        print("Player entered");
     }
   }
   
