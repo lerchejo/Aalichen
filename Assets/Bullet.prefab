@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   damage: 50
+  nearMissDistance: 2
 --- !u!68 &-8983969960702864088
 EdgeCollider2D:
   m_ObjectHideFlags: 0
