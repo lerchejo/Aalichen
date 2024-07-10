@@ -9,6 +9,7 @@ public class Turret : MonoBehaviour
     public float rotationSpeed = 5f;
     public int ammo = 20; // Add this line
     public float ShootRange = 20f;
+
     
     private Transform player;
     private float fireCountdown = 0f;
@@ -16,8 +17,9 @@ public class Turret : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        
         StartCoroutine(Shoot());
-    
+        
 
     }
 
@@ -25,7 +27,7 @@ public class Turret : MonoBehaviour
     {
         // Calculate direction to the player
         Vector2 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 150f;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f;
 
         // Rotate turret to face the player
         Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, angle));
