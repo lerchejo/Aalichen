@@ -56,9 +56,10 @@ public class LevelUpManager : MonoBehaviour
     public void LevelUp()
     {
         
-        levelUpScreen.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        levelUpScreen.SetActive(true);
+        
         // Select three random upgrades
         Upgrade[] selectedUpgrades = new Upgrade[3];
         List<int> selectedIndices = new List<int>();
@@ -77,6 +78,8 @@ public class LevelUpManager : MonoBehaviour
         // Assign each button to apply a different upgrade
         Option1Button.onClick.AddListener(() =>
         {
+            Debug.Log("Tessssssst");
+
             selectedUpgrades[0].Apply(GameManager, Movement, Player);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;
@@ -85,6 +88,8 @@ public class LevelUpManager : MonoBehaviour
         });
         Option2Button.onClick.AddListener(() =>
         {
+            Debug.Log("Tessssssst");
+
             selectedUpgrades[1].Apply(GameManager, Movement, Player);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;
@@ -92,6 +97,8 @@ public class LevelUpManager : MonoBehaviour
         });
         Option3Button.onClick.AddListener(() =>
         {
+            Debug.Log("Tessssssst");
+
             selectedUpgrades[2].Apply(GameManager, Movement,Player);
             levelUpScreen.SetActive(false);
             Time.timeScale = 1f;

@@ -78,6 +78,8 @@ public class GameManager : MonoBehaviour
         // If player's level is less than 5 and their XP is greater than or equal to the threshold for the next level
         if (level < 5 && XP >= levelThresholds[level + 1])
         {
+
+            Debug.Log("ABCSCSC");
             Time.timeScale = 0f;
             LevelUpManager.LevelUp();
 

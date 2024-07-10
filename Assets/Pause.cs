@@ -17,6 +17,4 @@ public class Pause : MonoBehaviour
        PauseScreen.SetActive(false);
        Time.timeScale = 1f;
    }
-   
-   
 }
