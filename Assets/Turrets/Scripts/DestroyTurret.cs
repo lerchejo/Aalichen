@@ -42,6 +42,7 @@ public class DestroyTurret : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInside = true;
+            turret.isPlayerInside = true; // Add this line
         }
     }
 
@@ -55,6 +56,7 @@ public class DestroyTurret : MonoBehaviour
                 StopCoroutine(destroyCoroutine);
                 destroyCoroutine = null;
             }
+            turret.isPlayerInside = false; // Add this line
         }
     }
 
