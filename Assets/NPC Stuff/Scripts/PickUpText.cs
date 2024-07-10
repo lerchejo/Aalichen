@@ -55,8 +55,6 @@ public class PickUpText : MonoBehaviour
     
     // Initialize currentSound to be able to check if it is playing
     currentSound = naziSounds[0];
-    
-    
   }
   private void Update()
   {
@@ -67,6 +65,7 @@ public class PickUpText : MonoBehaviour
       isEating = true;
         if (isFood && pickUpAllowed)
         {
+          //animator.SetBool("isEatingFood", true);
           //Play the right sound
           if (isBeer)
           {
@@ -82,8 +81,6 @@ public class PickUpText : MonoBehaviour
         }
         else if (!isFood && pickUpAllowed)
         {
-          animationSound.eatingNaziSound.Play();
-          
           eatNazi();
         }
 
