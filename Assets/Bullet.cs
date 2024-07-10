@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
     public int damage = 10;
     protected Vector2 targetPosition;
-    protected Vector2 direction;
+    protected Vector2 Direction;
 
     private AudioSource bulletSound;
     private AudioSource ImpactSound;
@@ -17,6 +17,8 @@ public class Bullet : MonoBehaviour
     private Transform player; // Transform of the player
     public float nearMissDistance = 1.0f; // Distance threshold for a near miss
 
+    public GameObject WOOSH;
+    
     private void Start()
     {
         ImpactSound = GameObject.Find("ImpactSound").GetComponent<AudioSource>();
@@ -27,11 +29,9 @@ public class Bullet : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player").transform; // Get the Transform of the player
         StartCoroutine(CheckForNearMiss());
-
-        
     }
 
-    
+    private GameObject NearmissSoundObject = null;
     IEnumerator CheckForNearMiss()
     {
         while (true)
@@ -40,13 +40,14 @@ public class Bullet : MonoBehaviour
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
             // If the distance to the player is less than the near miss distance, play the near miss sound
-            if (distanceToPlayer < nearMissDistance && !bulletNearMiss.isPlaying    )
+            if (distanceToPlayer < nearMissDistance && NearmissSoundObject == null)
             {
-                bulletNearMiss.Play();
+                NearmissSoundObject = Instantiate(WOOSH, transform.position, Quaternion.identity);
+                    //bulletNearMiss.Play();
+                
             }
-
-            // Wait for 0.1 seconds before the next check
-            yield return new WaitForSeconds(0.1f);
+            
+            yield return null;
         }
     }
     public void Seek(Vector2 _targetPosition)
@@ -55,28 +56,30 @@ public class Bullet : MonoBehaviour
         targetPosition = _targetPosition;
 
         // Calculate and store the direction to the target's position
-        direction = (targetPosition - (Vector2)transform.position).normalized;
-    }
+        Direction = (targetPosition - (Vector2)transform.position).normalized;
 
+        // Calculate the angle to the target
+        float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
+
+        // Set the bullet's rotation to match the direction to the target
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
+    }
     void Update()
     {
-        if (direction == Vector2.zero)
+        if (Direction == Vector2.zero)
         {
+            if(NearmissSoundObject != null)
+            {
+                Destroy(NearmissSoundObject);
+            }
+            
             Destroy(gameObject);
             return;
         }
 
         // Move the bullet in the stored direction
-        transform.Translate(direction * speed * Time.deltaTime, Space.World);
-
-        // Calculate the distance to the player
-     //  float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-     //  // If the distance to the player is less than the near miss distance, play the near miss sound
-     //  if (distanceToPlayer < nearMissDistance)
-     //  {
-     //      bulletNearMiss.Play();
-     //  }
+        transform.Translate(Direction * speed * Time.deltaTime, Space.World);
+        
     }
 
     protected void OnTriggerEnter2D(Collider2D hitInfo)
@@ -89,12 +92,21 @@ public class Bullet : MonoBehaviour
             {
                 ImpactSound.Play();
                 gameManager.decrementHP(damage);
+                if(NearmissSoundObject != null)
+                {
+                    Destroy(NearmissSoundObject);
+                }
                 Destroy(gameObject);
             }
         }
         else
         {
             bulletMiss.Play();
+            if(NearmissSoundObject != null)
+            {
+                Destroy(NearmissSoundObject);
+            }
+            
             Destroy(gameObject);
         }
     }

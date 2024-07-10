@@ -29,14 +29,14 @@ public class CircleBullet : Bullet
 
     void Update()
     {
-        if (direction == Vector2.zero)
+        if (Direction == Vector2.zero)
         {
             Destroy(gameObject);
             return;
         }
 
         // Move the bullet in the stored direction
-        transform.Translate(direction * speed * Time.deltaTime, Space.World);
+        transform.Translate(Direction * speed * Time.deltaTime, Space.World);
 
         // Check if the bullet has reached its target position
         if (Vector2.Distance(transform.position, targetPosition) <= 0.1f)

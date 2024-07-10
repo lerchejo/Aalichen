@@ -25,7 +25,7 @@ public class Turret : MonoBehaviour
     {
         // Calculate direction to the player
         Vector2 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 150f;
 
         // Rotate turret to face the player
         Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, angle));
