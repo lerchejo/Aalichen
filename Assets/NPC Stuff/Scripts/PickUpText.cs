@@ -47,33 +47,40 @@ public class PickUpText : MonoBehaviour
     
     // Initialize currentSound to be able to check if it is playing
     currentSound = naziSounds[0];
-    
-    
   }
   private void Update()
   {
-    if (pickUpAllowed && Input.GetKeyDown(KeyCode.F) && isEating == false)
+    if (Input.GetKeyDown(KeyCode.F) && isEating == false)
     {
+      animator.SetBool("Attack", true);
+      
       isEating = true;
-        if (isFood)
+        if (isFood && pickUpAllowed)
         {
           //animator.SetBool("isEatingFood", true);
-          animationSound.eatingFoodSound.Play();
           eatFood();
           
         }
-        else
+        else if (!isFood && pickUpAllowed)
         {
-          animationSound.eatingNaziSound.Play();
-          
           eatNazi();
         }
+
+        StartCoroutine(StopAttack());
       
     }
+  }
+  
+  IEnumerator StopAttack()
+  {
+    yield return new WaitForSeconds(1.5f);      
+    isEating = false;
+    animator.SetBool("Attack", false);
   }
 
   private void eatFood()
   {
+    animationSound.eatingFoodSound.Play();
     pickUpText.gameObject.SetActive(false);
     Destroy(Parent.gameObject);
     
@@ -95,14 +102,16 @@ public class PickUpText : MonoBehaviour
     // Play random Nazi Sound if it is the first time the enemy is hit
     if (Enemy.health >= 50)
     {
-      int randomIndex = UnityEngine.Random.Range(0, naziSounds.Length);
+      int randomIndex = Random.Range(0, naziSounds.Length);
       naziSounds[randomIndex].Play();
       currentSound = naziSounds[randomIndex];
     }
     
     Enemy.health -= gameManager.Damage;
     HealthBar.SetHealth(Enemy.health);
-
+    animator.SetBool("Attack", false);
+    
+    
     Invoke(nameof(killNazi), 1.5f);
   }
 
@@ -124,14 +133,10 @@ public class PickUpText : MonoBehaviour
   private void eatNazi()
   {
 
-          
-    //animator.SetBool("isEatingNazi", true);
-    
-
+    animationSound.eatingNaziSound.Play();
     pickUpText.gameObject.SetActive(false);
     isEating = false;
     DealDamage();
-    //animator.SetBool("isEatingNazi", false); // Set isEating to false after eating
     
   }
   

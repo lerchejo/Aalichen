@@ -102,6 +102,7 @@ MonoBehaviour:
   speed: 2
   damage: 50
   nearMissDistance: 2
+  WOOSH: {fileID: 15856310933221531, guid: 4cac440c6662909469de4d751ea7ee7d, type: 3}
 --- !u!68 &-8983969960702864088
 EdgeCollider2D:
   m_ObjectHideFlags: 0
