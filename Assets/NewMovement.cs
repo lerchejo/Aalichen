@@ -12,8 +12,8 @@ public class NewMovement : MonoBehaviour
 {
     Rigidbody2D body;
         
-    float horizontal;
-    float vertical;
+    public float horizontal;
+    public float vertical;
     float moveLimiter = 0.7f;
 
   //  public AnimatorController UpAnimator;
