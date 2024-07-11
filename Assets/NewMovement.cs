@@ -10,6 +10,8 @@ using Slider = UnityEngine.UI.Slider;
 
 public class NewMovement : MonoBehaviour
 {
+    
+    public static NewMovement Instance;
     Rigidbody2D body;
         
     float horizontal;
@@ -28,7 +30,21 @@ public class NewMovement : MonoBehaviour
     public float dashCooldown = 1.0f; // Cooldown duration in seconds
     private float lastDashTime = -1.0f; // Time when the last dash occurred
     
-    public Slider CooldownSlider;
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+    
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -42,7 +58,7 @@ public class NewMovement : MonoBehaviour
         float timeUntilNextDash = Mathf.Max(0, lastDashTime + dashCooldown - Time.time);
 
         // Update the value of the slider
-        CooldownSlider.value = 1 - timeUntilNextDash / dashCooldown;
+        UIManager.Instance.DashCooldown.value = 1 - timeUntilNextDash / dashCooldown;
         
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left

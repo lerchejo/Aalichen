@@ -5,12 +5,30 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
+    
     public int HP = 1000;
-    public HealthBar healthBar;
+    private HealthBar healthBar;
     private LevelManager levelManager;
 
-    private void Start()
+    private void Awake()
     {
+    
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    private void Start()
+    {   
+        healthBar = UIManager.Instance.HealthBar;
         healthBar.SetMaxHealth(HP);
         levelManager = FindObjectOfType<LevelManager>();
     }

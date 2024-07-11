@@ -11,14 +11,14 @@ public class ScoreCheck : MonoBehaviour
 {
     //This is temporary; replace with the right one
 
-    public TextMeshProUGUI dialogWindow;
-    public TextMeshProUGUI pressE;
+   // private TextMeshProUGUI dialogWindow;
+   // private TextMeshProUGUI pressE;
 
     public float timer = 10;
     private float currentTimer = 100;
 
     private bool LevelCleared = false;
-    public GameManager gm;
+    private GameManager gm;
 
     private bool LevelChangeReady = false;
     
@@ -28,41 +28,39 @@ public class ScoreCheck : MonoBehaviour
     public int NeededScore = 1000;
 
     private GameObject player;
-    public NPC npc;
-
     private void Start()
     {
         animator = GetComponent<Animator>();
+        if (animator.name == "Bus_Level2")
+        {
+            //animator.SetTrigger("Idle");
+        }
         player = GameObject.Find("Player");
+        gm = GameManager.Instance;
+        
+        StartCoroutine(StepOutOfBus());
     }
-
-   //private void Update()
-   //{
-   //    if (!LevelChangeReady)
-   //    {
-   //        if (LevelCleared)
-   //        {
-   //            currentTimer -= Time.deltaTime;
-   //        }
-
-   //       if (currentTimer <= 0)
-   //       {
-   //           LevelChangeReady = true;
-   //       }
-   //    }
-   //}
-
+    IEnumerator StepOutOfBus(float seconds = 1.5f)
+    {
+        yield return new WaitForSeconds(seconds);
+        player.GetComponent<SpriteRenderer>().enabled = true;
+    }
     private void LateUpdate()
     {
         currentTimer = timer;
         
       //  print(npc.enemies.Count + " Enemies left!");
         
-        if(npc.enemies.Count == 0 && !LevelCleared) 
+        if(gm.enemies.Count == 0 && !LevelCleared) 
         {
             ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
             //StartCoroutine(DialogClose());
             //currentTimer = timer;
+            if (animator.name == "Bus_Level2")
+            {
+                animator.SetBool("LevelCleared", true);
+            }
+            
             LevelCleared = true;
         }
     }
@@ -70,7 +68,7 @@ public class ScoreCheck : MonoBehaviour
     IEnumerator DialogClose(float seconds = 5f)
     {
         yield return new WaitForSeconds(seconds);
-        dialogWindow.gameObject.SetActive(false);
+        UIManager.Instance.dialogWindow.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -95,16 +93,16 @@ public class ScoreCheck : MonoBehaviour
 
     private void ActivateDialog(String text)
     {
-        dialogWindow.SetText(text);
-        dialogWindow.gameObject.SetActive(true);
+        UIManager.Instance.dialogWindow.SetText("The Bus is coming in 10 Minutes!\nGo to the bus station!");
+        UIManager.Instance.dialogWindow.gameObject.SetActive(true);
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            pressE.SetText("Joo, drück mal E!");
-            pressE.gameObject.SetActive(true);
+            UIManager.Instance.pressE.SetText("Joo, drück mal E!");
+            UIManager.Instance.pressE.gameObject.SetActive(true);
             if (LevelCleared && Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(player);
@@ -120,7 +118,7 @@ public class ScoreCheck : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
