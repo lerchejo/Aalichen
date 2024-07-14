@@ -10,9 +10,9 @@ public class LevelUpManager : MonoBehaviour
 {
     // Start is called before the first frame update
         public GameObject levelUpScreen;
-        public GameManager GameManager; // Reference to the GameManager
-        public NewMovement Movement; // Reference to the MovementScript
-        public Player Player; // Reference to the MovementScript
+        private GameManager GameManager; // Reference to the GameManager
+        private NewMovement Movement; // Reference to the MovementScript
+        private Player Player; // Reference to the MovementScript
 
         public Button Option1Button;
         public Button Option2Button;
@@ -22,7 +22,13 @@ public class LevelUpManager : MonoBehaviour
         public TextMeshProUGUI Option2Text;
         public TextMeshProUGUI Option3Text;
 
-        
+        private void Start()
+        {
+            GameManager = GameManager.Instance;
+            Movement = NewMovement.Instance;
+            Player = Player.Instance;
+        }
+
         public class Upgrade
         {
             public string Name { get; set; }

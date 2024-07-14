@@ -34,7 +34,7 @@ public class NPC : MonoBehaviour
 
     private GameObject target; // The enemy that the NPC is currently following
 
-    public TextMeshProUGUI EnemyCounter;
+    //public TextMeshProUGUI EnemyCounter;
 
     //private ShopDisplay Shopdisplay;
     private void Start()
@@ -54,7 +54,7 @@ public class NPC : MonoBehaviour
     
     private void Update()
     {
-        EnemyCounter.SetText("Enemies: " + enemies.Count);
+//        EnemyCounter.SetText("Enemies: " + enemies.Count);
         // List to store enemies with aggro
         List<GameObject> aggroEnemies = new List<GameObject>();
         
@@ -194,11 +194,4 @@ public class NPC : MonoBehaviour
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, step);
     }
-    
-    
-    //IEnumerator DialogCloseSlow()
-    //{
-    //    yield return new WaitForSeconds(5f);
-    //    DialogWindow.DeActivateDialog();
-    //}
 }

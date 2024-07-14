@@ -13,10 +13,14 @@ public class AIChase : MonoBehaviour
     public float roationSpeed = 0.5f;
     public Player Player;
 
-    public GameManager GameManager;
+    private GameManager GameManager;
     
     public bool deltaDistance = false;
 
+    private void Start()
+    {
+        GameManager = GameManager.Instance;
+    }
 
 
     // Update is called once per frame

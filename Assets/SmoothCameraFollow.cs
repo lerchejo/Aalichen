@@ -13,9 +13,16 @@ public class CameraFollow : MonoBehaviour
     public float maxX;
     public float minY;
     public float maxY;
-    
+
+
+    private void Start()
+    {
+        target = Player.Instance.transform;
+    }
+
     void FixedUpdate()
     {
+        if(target == null) return;
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
     

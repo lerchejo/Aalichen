@@ -68,6 +68,7 @@ public class DestroyTurret : MonoBehaviour
             healthBar.SetHealth(HP);
             if (HP <= 0)
             {
+                GameManager.Instance.incrementXP(Random.Range(40,60));
                 Destroy(gameObject);
                 yield break;
             }
