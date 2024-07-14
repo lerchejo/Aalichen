@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     public int XP = 0;
     public int Damage = 10;
     public int coins = 0;
@@ -14,28 +16,52 @@ public class GameManager : MonoBehaviour
     
     public LevelUpManager LevelUpManager;
     public GameObject PauseScreen;
-    // New variable for XP thresholds for each level
     public int[] levelThresholds = new int[] {0, 10, 100, 500, 1000};
     
+    protected internal List<GameObject> enemies;
+    private TextMeshProUGUI EnemyCounter;
+
     public ExperienceBar experienceBar;
 
     [SerializeField] private TextMeshProUGUI LevelText;
     [SerializeField] private TextMeshProUGUI coinsText;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+    }
+    
     private void Start()
     {
         LevelText.SetText("Level: " + level);
         experienceBar.SetXP(1);
         experienceBar.SetMaxXP(levelThresholds[1]);
+        enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+        EnemyCounter = UIManager.Instance.EnemyCounter;
     }
 
- 
-
+    
+    
     public void incrementXP(int value)
     {
         XP += value;
         experienceBar.SetXP(XP);
-        CheckLevelUp(); // Check if player has leveled up
+        CheckLevelUp();
         LevelText.SetText("Level: " + level);
     }
 
@@ -44,7 +70,6 @@ public class GameManager : MonoBehaviour
         coins += value;
     }
 
-   
     public void decrementCoins(int value)
     {
         coins -= value;
@@ -53,7 +78,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         coinsText.text = "Coins: " + coins;
-
+        EnemyCounter.SetText("Enemies: " + enemies.Count);
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (PauseScreen.activeSelf)
@@ -75,13 +101,12 @@ public class GameManager : MonoBehaviour
     
     private void CheckLevelUp()
     {
-        // If player's level is less than 5 and their XP is greater than or equal to the threshold for the next level
         if (level < 5 && XP >= levelThresholds[level + 1])
         {
+            Debug.Log("ABCSCSC");
             Time.timeScale = 0f;
             LevelUpManager.LevelUp();
-
-            level++; // Increase player's level
+            level++;
             experienceBar.UpdateXP(XP);
         }
     }

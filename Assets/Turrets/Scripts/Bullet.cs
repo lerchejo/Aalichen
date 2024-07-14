@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public int damage = 10;
     protected Vector2 targetPosition;
     protected Vector2 Direction;
+    private bool isDestroyed = false; // Add this line
 
     private AudioSource bulletSound;
     private AudioSource ImpactSound;
@@ -21,16 +22,54 @@ public class Bullet : MonoBehaviour
     
     private void Start()
     {
-        ImpactSound = GameObject.Find("ImpactSound").GetComponent<AudioSource>();
-        bulletSound = GameObject.Find("GunshotSound").GetComponent<AudioSource>();
-        bulletMiss = GameObject.Find("BulletMissSound").GetComponent<AudioSource>();
-        bulletNearMiss = GameObject.Find("BulletNearMissSound").GetComponent<AudioSource>(); // Get the AudioSource for the near miss sound
-        bulletSound.Play();
+        GameObject impactSoundObject = GameObject.Find("ImpactSound");
+        if (impactSoundObject != null)
+        {
+            ImpactSound = impactSoundObject.GetComponent<AudioSource>();
+        }
 
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Get the Transform of the player
-        StartCoroutine(CheckForNearMiss());
+        GameObject gunshotSoundObject = GameObject.Find("GunshotSound");
+        if (gunshotSoundObject != null)
+        {
+            bulletSound = gunshotSoundObject.GetComponent<AudioSource>();
+        }
+
+        GameObject bulletMissSoundObject = GameObject.Find("BulletMissSound");
+        if (bulletMissSoundObject != null)
+        {
+            bulletMiss = bulletMissSoundObject.GetComponent<AudioSource>();
+        }
+
+        GameObject bulletNearMissSoundObject = GameObject.Find("BulletNearMissSound");
+        if (bulletNearMissSoundObject != null)
+        {
+            bulletNearMiss = bulletNearMissSoundObject.GetComponent<AudioSource>();
+        }
+
+        if (bulletSound != null)
+        {
+            bulletSound.Play();
+        }
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (player != null)
+        {
+            StartCoroutine(CheckForNearMiss());
+        }
+
+        StartCoroutine(DestroyBullet());
     }
 
+    IEnumerator DestroyBullet()
+    {
+        yield return new WaitForSeconds(10f);
+        if (!isDestroyed)
+        {
+            Debug.Log("Destroying bullet");
+            Destroy(gameObject);
+        }
+    }
+    
     private GameObject NearmissSoundObject = null;
     IEnumerator CheckForNearMiss()
     {
@@ -64,6 +103,7 @@ public class Bullet : MonoBehaviour
         // Set the bullet's rotation to match the direction to the target
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
     }
+    
     void Update()
     {
         if (Direction == Vector2.zero)
@@ -72,7 +112,8 @@ public class Bullet : MonoBehaviour
             {
                 Destroy(NearmissSoundObject);
             }
-            
+
+            isDestroyed = true; // Add this line
             Destroy(gameObject);
             return;
         }
@@ -87,6 +128,8 @@ public class Bullet : MonoBehaviour
         if(hitInfo.CompareTag("Player"))
         {
             Debug.Log(hitInfo.name);
+            isDestroyed = true; // Add this line
+
             Player gameManager = hitInfo.GetComponent<Player>();
             if (gameManager != null)
             {
@@ -94,6 +137,8 @@ public class Bullet : MonoBehaviour
                 gameManager.decrementHP(damage);
                 if(NearmissSoundObject != null)
                 {
+                    isDestroyed = true; // Add this line
+
                     Destroy(NearmissSoundObject);
                 }
                 Destroy(gameObject);
@@ -107,6 +152,7 @@ public class Bullet : MonoBehaviour
                 Destroy(NearmissSoundObject);
             }
             
+            isDestroyed = true; // Add this line
             Destroy(gameObject);
         }
     }

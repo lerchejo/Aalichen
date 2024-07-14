@@ -26,6 +26,11 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogError("GameManager not found in the scene.");
         }
+        if (PlayerScript == null)
+        {
+            Debug.LogError("PlayerScript not found in the scene.");
+        }
+
     }
 
     private void Update()

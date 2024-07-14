@@ -9,18 +9,18 @@ using Random = UnityEngine.Random;
 
 public class PickUpText : MonoBehaviour
 {
-  [SerializeField] private TextMeshProUGUI pickUpText;
+  //[SerializeField] private TextMeshProUGUI pickUpText;
   //[SerializeField] private float proximityThreshold = 2.0f;
   [SerializeField] private bool isFood = true;
   private bool isBeer;
   
   public Enemy Enemy = null;
-  public HealthBar HealthBar = null;
+  private HealthBar HealthBar = null;
   public GameObject Parent;
   public Animator animator;
   public Player player;
   
-  public GameManager gameManager;
+  private GameManager gameManager;
 
   private bool isEating = false;
   private NPC npc;
@@ -34,9 +34,8 @@ public class PickUpText : MonoBehaviour
 
   private void Start()
   {
-    npc = FindObjectOfType<NPC>();
-    pickUpText.gameObject.SetActive(false);
-
+    UIManager.Instance.pressE.gameObject.SetActive(false);
+    gameManager = GameManager.Instance;
     if (isFood)
     {
       Enemy = null;
@@ -50,11 +49,12 @@ public class PickUpText : MonoBehaviour
     }
     else
     {
+      HealthBar = Parent.GetComponentInChildren<HealthBar>();
       HealthBar.SetMaxHealth(Enemy.health);
     }
     
     // Initialize currentSound to be able to check if it is playing
-    currentSound = naziSounds[0];
+    //currentSound = naziSounds[0];
   }
   private void Update()
   {
@@ -91,24 +91,25 @@ public class PickUpText : MonoBehaviour
   
   IEnumerator StopAttack()
   {
-    yield return new WaitForSeconds(1.5f);      
+    yield return new WaitForSeconds(0.5f);      
     isEating = false;
     animator.SetBool("Attack", false);
   }
 
   private void eatFood()
   {
+    print(HealthBar);
     animationSound.eatingFoodSound.Play();
-    pickUpText.gameObject.SetActive(false);
+    UIManager.Instance.pressE.gameObject.SetActive(false);
     Destroy(Parent.gameObject);
     
-    if (player.HP <= 900)
+    if (player.HP <= 850)
     {
-      player.incrementHP(100);
+      player.incrementHP(150);
     }
-    else if (player.HP > 900 && player.HP % 100 != 0)
+    else if (player.HP > 900 && player.HP % 150 != 0)
     {
-      player.incrementHP(100 - player.HP % 100);
+      player.incrementHP(150 - player.HP % 150);
     }
     
     //animator.SetBool("isEatingFood", false); // Set isEating to false after eating
@@ -143,7 +144,9 @@ public class PickUpText : MonoBehaviour
     {
       gameManager.incrementXP(Random.Range(5, 20));
       gameManager.incrementCoins(random);
-      npc.enemies.Remove(enemyToBeEaten);
+      gameManager.enemies.Remove(enemyToBeEaten);
+      //npc.enemies.Remove(enemyToBeEaten);
+      
       Destroy(enemyToBeEaten);
     }
   }
@@ -152,7 +155,7 @@ public class PickUpText : MonoBehaviour
   {
 
     animationSound.eatingNaziSound.Play();
-    pickUpText.gameObject.SetActive(false);
+    UIManager.Instance.pressE.gameObject.SetActive(false);
     isEating = false;
     DealDamage();
     
@@ -162,7 +165,7 @@ public class PickUpText : MonoBehaviour
   {
     if (other.CompareTag("Player"))
     {
-        pickUpText.gameObject.SetActive(true);
+      UIManager.Instance.pressE.gameObject.SetActive(true);
         pickUpAllowed = true;
         print("Player entered");
     }
@@ -172,7 +175,7 @@ public class PickUpText : MonoBehaviour
   {
     if (collision.CompareTag("Player"))
     {
-      pickUpText.gameObject.SetActive(false);
+      UIManager.Instance.pressE.gameObject.SetActive(false);
       pickUpAllowed = false;
     }
   }
