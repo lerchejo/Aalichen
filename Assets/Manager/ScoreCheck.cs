@@ -22,7 +22,9 @@ public class ScoreCheck : MonoBehaviour
 
     private bool LevelChangeReady = false;
     
-    public AudioSource busSound;
+    public AudioSource DepartSound;
+    public AudioSource ArriveSound;
+    public AudioSource IdleSound;
     private Animator animator;
 
     public int NeededScore = 1000;
@@ -62,13 +64,12 @@ public class ScoreCheck : MonoBehaviour
             ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
             //StartCoroutine(DialogClose());
             //currentTimer = timer;
-           // if (SceneManager.GetActiveScene().buildIndex == 2)
-           // {   
-                Debug.Log("Level Cleared");
-                animator.SetTrigger("LevelCleared");
-                animator.SetBool("WaitAtStop", true);
+            
+           Debug.Log("Level Cleared");
+           animator.SetTrigger("LevelCleared");
+           animator.SetBool("WaitAtStop", true);
                 
-            //}
+            
             
             LevelCleared = true;
         }
@@ -151,7 +152,17 @@ public class ScoreCheck : MonoBehaviour
 
     public void PlayBusSound()
     {
-        busSound.Play();
+        DepartSound.Play();
+    }
+    
+    public void PlayBusArriveSound()
+    {
+        ArriveSound.Play();
+    }
+    
+    public void PlayBusIdleSound()
+    {
+        IdleSound.Play();
     }
 
 
