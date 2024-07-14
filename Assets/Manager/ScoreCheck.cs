@@ -22,7 +22,9 @@ public class ScoreCheck : MonoBehaviour
 
     private bool LevelChangeReady = false;
     
-    public AudioSource busSound;
+    public AudioSource DepartSound;
+    public AudioSource ArriveSound;
+    public AudioSource IdleSound;
     private Animator animator;
 
     public int NeededScore = 1000;
@@ -31,10 +33,6 @@ public class ScoreCheck : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        if (animator.name == "Bus_Level2")
-        {
-            //animator.SetTrigger("Idle");
-        }
         player = GameObject.Find("Player");
         gm = GameManager.Instance;
         
@@ -42,8 +40,17 @@ public class ScoreCheck : MonoBehaviour
     }
     IEnumerator StepOutOfBus(float seconds = 1.5f)
     {
+        var Movement = player.GetComponent<NewMovement>();
+        if(Movement != null)
+        {
+            Movement.enabled = false;
+        }
         yield return new WaitForSeconds(seconds);
         player.GetComponent<SpriteRenderer>().enabled = true;
+        if (Movement)
+        {
+            Movement.enabled = true;
+        }
     }
     private void LateUpdate()
     {
@@ -57,13 +64,12 @@ public class ScoreCheck : MonoBehaviour
             ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
             //StartCoroutine(DialogClose());
             //currentTimer = timer;
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-            {   
-                Debug.Log("Level Cleared");
-                animator.SetTrigger("LevelCleared");
-                animator.SetBool("WaitAtStop", true);
+            
+           Debug.Log("Level Cleared");
+           animator.SetTrigger("LevelCleared");
+           animator.SetBool("WaitAtStop", true);
                 
-            }
+            
             
             LevelCleared = true;
         }
@@ -110,18 +116,18 @@ public class ScoreCheck : MonoBehaviour
             if (LevelCleared && Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(player);
-                if (SceneManager.GetActiveScene().buildIndex == 1)
-                {
-                    animator.SetBool("DriveOff", true);
-                    StartCoroutine(ChangeScene());
+               //if (SceneManager.GetActiveScene().buildIndex == 1)
+               //{
+               //    animator.SetBool("DriveOff", true);
+               //    StartCoroutine(ChangeScene());
 
-                }
-                else if (SceneManager.GetActiveScene().buildIndex == 2)
-                {
+               //}
+              //  else if (SceneManager.GetActiveScene().buildIndex == 2)
+              //  {
                     animator.SetBool("WaitAtStop", false);
                     StartCoroutine(ChangeScene(3f));
 
-                }
+                //}
             }
         }
        
@@ -146,7 +152,17 @@ public class ScoreCheck : MonoBehaviour
 
     public void PlayBusSound()
     {
-        busSound.Play();
+        DepartSound.Play();
+    }
+    
+    public void PlayBusArriveSound()
+    {
+        ArriveSound.Play();
+    }
+    
+    public void PlayBusIdleSound()
+    {
+        IdleSound.Play();
     }
 
 
