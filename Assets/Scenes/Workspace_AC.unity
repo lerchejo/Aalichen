@@ -367,6 +367,179 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49c0557292747f40894c7052ff8e68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &381922270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!213 &387949729
 Sprite:
   m_ObjectHideFlags: 0
@@ -727,6 +900,179 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 3907687207130037598}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &796102904
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!4 &820475522 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6075975974975622417, guid: a92434f05fc24a2408687e0356655548,
@@ -65224,6 +65570,179 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 852668675}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1291859546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!82 &1325250343 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6090252480282402934, guid: 6bf89db50ee26a342b8049ef07551014,
@@ -65270,18 +65789,1056 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 3907687207130037598}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1392854732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!212 &1425265630 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3862331477568453740, guid: db04e31d468a40949af84c9d0e9e7349,
     type: 3}
   m_PrefabInstance: {fileID: 852668675}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1436451027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!4 &1469284021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6075975974975622417, guid: 78e9efbdf9b33994da8dfbe530f65e5e,
     type: 3}
   m_PrefabInstance: {fileID: 154084136}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1567973450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
+--- !u!1001 &1585995143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
+--- !u!1001 &1623391868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
+--- !u!1001 &1661850026
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!1 &1671124375
 GameObject:
   m_ObjectHideFlags: 0
@@ -65875,6 +67432,179 @@ SpriteRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 852668675}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2035387736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 862374}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 527193205533372948, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: PlayerScript
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1669025734291087043, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1144137040}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 1755356161243538003, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3359330155080004977, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Nazi (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448490747249497423, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884137997848689907, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 339663434}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4186800809406339252}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: pickUpText
+      value: 
+      objectReference: {fileID: 290663552}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: animationSound
+      value: 
+      objectReference: {fileID: 339663404}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1325250343}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2113606103}
+    - target: {fileID: 9159850767264110450, guid: b4704f45d1667ea469cb59ef446f90c9,
+        type: 3}
+      propertyPath: naziSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 862374}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4704f45d1667ea469cb59ef446f90c9, type: 3}
 --- !u!82 &2113606103 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5618403567188485642, guid: 6bf89db50ee26a342b8049ef07551014,
@@ -67275,4 +69005,14 @@ SceneRoots:
   - {fileID: 4002836190610741642}
   - {fileID: 852668675}
   - {fileID: 5542427504134185633}
+  - {fileID: 1436451027}
+  - {fileID: 1585995143}
+  - {fileID: 1392854732}
+  - {fileID: 1623391868}
+  - {fileID: 381922270}
+  - {fileID: 1661850026}
+  - {fileID: 796102904}
+  - {fileID: 1567973450}
+  - {fileID: 2035387736}
+  - {fileID: 1291859546}
   - {fileID: 3907687207130037598}
