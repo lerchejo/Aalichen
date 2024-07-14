@@ -13,7 +13,13 @@ public class CameraFollow : MonoBehaviour
     public float maxX;
     public float minY;
     public float maxY;
-    
+
+
+    private void Start()
+    {
+        target = Player.Instance.transform;
+    }
+
     void FixedUpdate()
     {
         if(target == null) return;

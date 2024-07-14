@@ -53,12 +53,16 @@ public class ScoreCheck : MonoBehaviour
         
         if(gm.enemies.Count == 0 && !LevelCleared) 
         {
+            Debug.Log(animator.name);
             ActivateDialog("The Bus is coming in 10 minutes!\nGo to the bus station!");
             //StartCoroutine(DialogClose());
             //currentTimer = timer;
-            if (animator.name == "Bus_Level2")
-            {
-                animator.SetBool("LevelCleared", true);
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {   
+                Debug.Log("Level Cleared");
+                animator.SetTrigger("LevelCleared");
+                animator.SetBool("WaitAtStop", true);
+                
             }
             
             LevelCleared = true;
@@ -106,8 +110,18 @@ public class ScoreCheck : MonoBehaviour
             if (LevelCleared && Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(player);
-                animator.SetBool("DriveOff", true);
-                StartCoroutine(ChangeScene());
+                if (SceneManager.GetActiveScene().buildIndex == 1)
+                {
+                    animator.SetBool("DriveOff", true);
+                    StartCoroutine(ChangeScene());
+
+                }
+                else if (SceneManager.GetActiveScene().buildIndex == 2)
+                {
+                    animator.SetBool("WaitAtStop", false);
+                    StartCoroutine(ChangeScene(3f));
+
+                }
             }
         }
        
