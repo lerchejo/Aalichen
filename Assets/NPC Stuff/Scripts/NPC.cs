@@ -20,7 +20,7 @@ public class NPC : MonoBehaviour
     public float speed = 5f; // Speed of NPC
     public int amount = 10; // Amount of coins to give
     public GameManager GameManager;
-    // Flag to determine if NPC should follow player
+
     public GameObject player;
     public int HP = 500; // Health of NPC
     [FormerlySerializedAs("HealthBar")] public HealthBar healthBar; // Experience of NPC
@@ -33,9 +33,7 @@ public class NPC : MonoBehaviour
     public List<GameObject> enemies; // List of enemies
 
     private GameObject target; // The enemy that the NPC is currently following
-
-    //public TextMeshProUGUI EnemyCounter;
-
+    
     //private ShopDisplay Shopdisplay;
     private void Start()
     {
@@ -72,7 +70,6 @@ public class NPC : MonoBehaviour
             }
         }
         
-        // If there are enemies with aggro
         // If there are enemies with aggro
         if (aggroEnemies.Count > 0)
         {
@@ -140,7 +137,7 @@ public class NPC : MonoBehaviour
             //Play a random hireJerkSound
             if (!lastHireJerkSound.isPlaying)
             {
-                lastHireJerkSound = hireJerkSounds[UnityEngine.Random.Range(0, hireJerkSounds.Length)];
+                lastHireJerkSound = hireJerkSounds[Random.Range(0, hireJerkSounds.Length)];
                 lastHireJerkSound.Play();
             }
             

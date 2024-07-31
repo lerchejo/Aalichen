@@ -10,9 +10,17 @@ public class trap : MonoBehaviour
     public float time = 3.0f;
     public float delay = 0.3f;
     Rigidbody2D Player_rb = null;
-    [FormerlySerializedAs("player")] public NewMovement player_movement;
-    public Animator trap_animator;
-    public Animator walk_animator;
+    [FormerlySerializedAs("player")] private NewMovement player_movement;
+    private Animator trap_animator;
+    private Animator walk_animator;
+
+
+    private void Start()
+    {
+        player_movement = NewMovement.Instance;
+        trap_animator = GetComponent<Animator>();
+        walk_animator = Player.Instance.GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
