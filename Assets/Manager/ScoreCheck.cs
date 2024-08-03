@@ -116,6 +116,7 @@ public class ScoreCheck : MonoBehaviour
             if (LevelCleared && Input.GetKeyDown(KeyCode.E))
             {
                 Destroy(player);
+                LevelManager.instance.LoadNextLevel();
                //if (SceneManager.GetActiveScene().buildIndex == 1)
                //{
                //    animator.SetBool("DriveOff", true);
@@ -125,7 +126,7 @@ public class ScoreCheck : MonoBehaviour
               //  else if (SceneManager.GetActiveScene().buildIndex == 2)
               //  {
                     animator.SetBool("WaitAtStop", false);
-                    StartCoroutine(ChangeScene(3f));
+                    //StartCoroutine(ChangeScene(3f));
 
                 //}
             }

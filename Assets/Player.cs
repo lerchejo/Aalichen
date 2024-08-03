@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
                 Destroy(gameObject);
             }catch (Exception e)
             {
-                Debug.LogError("Player not found in the scene.");
+                Debug.LogError(e.Message);
             }
         }
     }
