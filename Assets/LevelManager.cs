@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,38 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
    
+    #region Instance
+    
+    public static LevelManager instance;
+
+    private void Awake()
+    {
+        if(instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+    
+    #endregion Instance
+
+
+    
+    
     public GameObject deathScreen;
     public AudioSource deathSound;
     
+    public IntermissionManager intermissionManager;
+
+    private void Start()
+    {
+        intermissionManager = IntermissionManager.instance;
+    }
+
     public void ReloadLevel()
     {
         Time.timeScale = 1f;
@@ -32,7 +62,8 @@ public class LevelManager : MonoBehaviour
     
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        intermissionManager.IntermissionActivate();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     
     public void enableDeathScreen()
