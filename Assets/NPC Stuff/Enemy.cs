@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     [FormerlySerializedAs("Health")] public float health = 50f;
     public float HealthMax = 50f;
     public int damage = 1;
-    public GameManager gameManager;
+    private GameManager gameManager;
     public GameObject Player;
     public Player PlayerScript;
     public LevelManager levelManager;
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
          animator = GetComponent<Animator>();
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = GameManager.Instance;
         if (gameManager == null)
         {
             Debug.LogError("GameManager not found in the scene.");
