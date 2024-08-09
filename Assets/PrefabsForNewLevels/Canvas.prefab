@@ -1202,9 +1202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelUpScreen: {fileID: 2177234308769887995}
-  GameManager: {fileID: 0}
-  Movement: {fileID: 0}
-  Player: {fileID: 0}
   Option1Button: {fileID: 5282501674388923175}
   Option2Button: {fileID: 1186521380764377778}
   Option3Button: {fileID: 7991893393396935025}
@@ -1249,10 +1246,10 @@ RectTransform:
   - {fileID: 4792984609724301870}
   - {fileID: 4690090769322390977}
   - {fileID: 6574477453323733159}
+  - {fileID: 8301933281361950643}
   - {fileID: 6858879108334419407}
   - {fileID: 9175545635482696324}
   - {fileID: 8918870582293948353}
-  - {fileID: 8301933281361950643}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

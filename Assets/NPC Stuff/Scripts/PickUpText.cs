@@ -98,7 +98,7 @@ public class PickUpText : MonoBehaviour
 
   private void eatFood()
   {
-    print(HealthBar);
+    //print(HealthBar);
     animationSound.eatingFoodSound.Play();
     UIManager.Instance.pressE.gameObject.SetActive(false);
     Destroy(Parent.gameObject);

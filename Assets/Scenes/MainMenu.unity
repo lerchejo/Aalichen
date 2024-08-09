@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 735921710}
   - component: {fileID: 735921709}
   m_Layer: 5
-  m_Name: StartGame (1)
+  m_Name: ExitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,6 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathScreen: {fileID: 0}
   deathSound: {fileID: 0}
+  intermissionManager: {fileID: 0}
 --- !u!4 &969613526
 Transform:
   m_ObjectHideFlags: 0
@@ -1129,7 +1130,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 969613525}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadNextLevel
+        m_MethodName: startGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
