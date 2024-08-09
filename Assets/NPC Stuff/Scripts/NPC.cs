@@ -25,12 +25,12 @@ public class NPC : MonoBehaviour
     public int HP = 500; // Health of NPC
     [FormerlySerializedAs("HealthBar")] public HealthBar healthBar; // Experience of NPC
     //public GameObject enemy; // Reference to the enemy
-    public GameObject enemy; // Reference to the enemy
+    // public GameObject enemy; // Reference to the enemy
     [SerializeField] private AudioSource[] hireJerkSounds;
     //Last played hireJerkSound, must be initialized to avoid error
     private AudioSource lastHireJerkSound;
 
-    public List<GameObject> enemies; // List of enemies
+    private List<GameObject> enemies; // List of enemies
 
     private GameObject target; // The enemy that the NPC is currently following
     
@@ -42,7 +42,7 @@ public class NPC : MonoBehaviour
         //Shopdisplay = ShopDisplay.instance;
         
         healthBar.SetMaxHealth(HP);
-        enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+        enemies = GameManager.enemies;
 
         
         // Initialize the lastHireJerkSound to the first sound in the array to avoid Errors
@@ -95,6 +95,10 @@ public class NPC : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             // Calculate the distance to the enemy
+            if (enemy == null)
+            {
+                continue;
+            } 
             float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
 
             // If the enemy is within range
@@ -134,6 +138,7 @@ public class NPC : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.E) && inDistance)
         {
+            Debug.Log("Hired Jerk!");
             //Play a random hireJerkSound
             if (!lastHireJerkSound.isPlaying)
             {
@@ -153,8 +158,10 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player in distance");
             inDistance = true;
         }
     }
@@ -167,28 +174,54 @@ public class NPC : MonoBehaviour
         }
     }
     
+    // private void FollowPlayer(GameObject target)
+    // {
+    //     // Calculate the midpoint between the player and the enemy
+    //     Vector2 midpoint = (player.transform.position + target.transform.position) / 2;
+    //
+    //     // Calculate the direction to the midpoint
+    //     Vector2 direction = (midpoint - (Vector2)transform.position).normalized;
+    //
+    //     // Calculate the target position 2 meters away from the midpoint in the direction of the midpoint
+    //     Vector2 targetPosition = midpoint + direction * 2;
+    //
+    //     // Calculate the distance to the target position
+    //     float distanceToTarget = Vector2.Distance(transform.position, targetPosition);
+    //
+    //     // If the distance is less than a certain threshold, stop moving
+    //     if (distanceToTarget < 6f)
+    //     {
+    //         return;
+    //     }
+    //
+    //     // Move towards the target position
+    //     float step = speed * Time.deltaTime;
+    //     transform.position = Vector2.MoveTowards(transform.position, targetPosition, step);
+    // }
+    
     private void FollowPlayer(GameObject target)
     {
-        // Calculate the midpoint between the player and the enemy
+        // Berechne den Mittelpunkt zwischen Spieler und Ziel
         Vector2 midpoint = (player.transform.position + target.transform.position) / 2;
 
-        // Calculate the direction to the midpoint
-        Vector2 direction = (midpoint - (Vector2)transform.position).normalized;
+        // Berechne die Richtung von der aktuellen Position zum Mittelpunkt
+        Vector2 directionToMidpoint = (midpoint - (Vector2)transform.position).normalized;
 
-        // Calculate the target position 2 meters away from the midpoint in the direction of the midpoint
-        Vector2 targetPosition = midpoint + direction * 2;
+        // Berechne die Zielposition 2 Meter vom Mittelpunkt in der berechneten Richtung
+        Vector2 targetPosition = midpoint + directionToMidpoint * 2;
 
-        // Calculate the distance to the target position
+        // Berechne die Distanz zur Zielposition
         float distanceToTarget = Vector2.Distance(transform.position, targetPosition);
 
-        // If the distance is less than a certain threshold, stop moving
+        // Wenn die Distanz kleiner als eine bestimmte Schwelle ist, höre auf zu bewegen
         if (distanceToTarget < 6f)
         {
             return;
         }
 
-        // Move towards the target position
+        // Bewege dich zur Zielposition
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, step);
     }
+
 }
