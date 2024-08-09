@@ -69879,6 +69879,114 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45a0c2481c6dfeb4696bac5ec2a28aad, type: 3}
+--- !u!1001 &6239833618171835301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 399586035382375760, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399586035382375760, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.17313431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658951338430164781, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468403379291611452, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1589975683135141738}
+    - target: {fileID: 3468403379291611452, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 5535550226291206998}
+    - target: {fileID: 3468403379291611452, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: hireJerkSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1041621851}
+    - target: {fileID: 3468403379291611452, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: hireJerkSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 1985262376}
+    - target: {fileID: 3468403379291611452, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: hireJerkSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 1782090816}
+    - target: {fileID: 3468403379291611452, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: hireJerkSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 1945298279}
+    - target: {fileID: 4900586609255468071, guid: e77afedca3bb4bc40bcd330e9d890886,
+        type: 3}
+      propertyPath: m_Name
+      value: Penner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e77afedca3bb4bc40bcd330e9d890886, type: 3}
 --- !u!82 &7599346553615990050 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5081020324269101508, guid: 6bf89db50ee26a342b8049ef07551014,
@@ -70109,3 +70217,4 @@ SceneRoots:
   - {fileID: 213942870}
   - {fileID: 60960972}
   - {fileID: 1701853032}
+  - {fileID: 6239833618171835301}
