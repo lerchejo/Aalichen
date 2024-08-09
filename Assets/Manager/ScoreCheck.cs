@@ -129,6 +129,7 @@ public class ScoreCheck : MonoBehaviour
 
                 //}
             }
+            UIManager.Instance.pressE.gameObject.SetActive(false);
         }
        
     }

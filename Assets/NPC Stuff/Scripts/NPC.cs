@@ -40,6 +40,7 @@ public class NPC : MonoBehaviour
         //FollowPlayer();
         // DialogWindow = DialogWindow.instance;
         //Shopdisplay = ShopDisplay.instance;
+        GameManager = GameManager.Instance;
         
         healthBar.SetMaxHealth(HP);
         enemies = GameManager.enemies;
