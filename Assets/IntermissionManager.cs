@@ -14,15 +14,7 @@ public class IntermissionManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
             instance = this;
-        }
     }
     
     #endregion Instance

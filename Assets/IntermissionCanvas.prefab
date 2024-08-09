@@ -125,6 +125,11 @@ PrefabInstance:
       propertyPath: TotalWaitTime
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4602551007010841467, guid: 7b6b385fa04ca7540a025ae558bf969f,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6066507375387088597, guid: 7b6b385fa04ca7540a025ae558bf969f,
         type: 3}
       propertyPath: m_Pivot.x

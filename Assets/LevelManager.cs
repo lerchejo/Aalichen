@@ -13,15 +13,9 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
-        {
+        
             instance = this;
-        }
+       
     }
     
     #endregion Instance
@@ -34,9 +28,14 @@ public class LevelManager : MonoBehaviour
     
     public IntermissionManager intermissionManager;
 
+    UIManager uiManager;
+
+    public Pause PauseManager;
     private void Start()
     {
         intermissionManager = IntermissionManager.instance;
+        uiManager = UIManager.Instance;
+        deathScreen = uiManager.gameObject.GetComponent<FindDeathScreen>().DeathScreen;
     }
 
     public void ReloadLevel()
@@ -52,6 +51,7 @@ public class LevelManager : MonoBehaviour
     
     public void toMainMenu()
     {
+        PauseManager.ResumeGame();
         SceneManager.LoadScene("MainMenu");
     }
     
@@ -67,6 +67,7 @@ public class LevelManager : MonoBehaviour
     
     public void LoadNextLevel()
     {
+        intermissionManager = IntermissionManager.instance;
         intermissionManager.IntermissionActivate();
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -78,9 +79,9 @@ public class LevelManager : MonoBehaviour
     
     public void enableDeathScreen()
     {
-        deathSound.Play();
+        deathScreen.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        deathScreen.SetActive(true);
+        deathSound.Play();
     }
 }

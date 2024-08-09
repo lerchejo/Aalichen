@@ -40,14 +40,20 @@ public class NPC : MonoBehaviour
         //FollowPlayer();
         // DialogWindow = DialogWindow.instance;
         //Shopdisplay = ShopDisplay.instance;
+
         GameManager = GameManager.Instance;
-        
+
         healthBar.SetMaxHealth(HP);
         enemies = GameManager.enemies;
 
         
         // Initialize the lastHireJerkSound to the first sound in the array to avoid Errors
         lastHireJerkSound = hireJerkSounds[0];
+
+        target = Player.Instance.gameObject;
+
+        
+
     }
     
     

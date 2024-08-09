@@ -20,6 +20,8 @@ public class AIChase : MonoBehaviour
     private void Start()
     {
         GameManager = GameManager.Instance;
+        Player = Player.Instance;
+        player = Player.gameObject;
     }
 
 
