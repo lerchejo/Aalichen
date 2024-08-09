@@ -103,7 +103,6 @@ public class GameManager : MonoBehaviour
     {
         if (level < 5 && XP >= levelThresholds[level + 1])
         {
-            Debug.Log("ABCSCSC");
             Time.timeScale = 0f;
             LevelUpManager.LevelUp();
             level++;
