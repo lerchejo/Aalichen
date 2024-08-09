@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     public float HealthMax = 50f;
     public int damage = 1;
     public GameManager gameManager;
-    public GameObject Player;
+    public GameObject _Player;
     public Player PlayerScript;
     public LevelManager levelManager;
     private Animator animator;
@@ -30,6 +30,9 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogError("PlayerScript not found in the scene.");
         }
+
+        _Player = Player.Instance.gameObject;
+        PlayerScript = Player.Instance;
 
     }
 

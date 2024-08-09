@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - Food
   - resources
+  - DeathScreen
   layers:
   - Default
   - TransparentFX
