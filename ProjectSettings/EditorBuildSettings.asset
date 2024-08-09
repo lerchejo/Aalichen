@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Frankenberger Park final.unity
     guid: 6f36bad9d0cabd24aba3a5e903953cbb
+  - enabled: 1
+    path: Assets/Scenes/Manual.unity
+    guid: 255820e1b2481af40b5b9ee654954a16
   m_configObjects: {}

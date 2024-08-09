@@ -25,6 +25,11 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
     
+    public void toManual()
+    {
+        SceneManager.LoadScene("Manual");
+    }
+    
     public void QuitGame()
     {
         Application.Quit();
