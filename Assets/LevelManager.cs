@@ -70,6 +70,11 @@ public class LevelManager : MonoBehaviour
         intermissionManager.IntermissionActivate();
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void startGame()
+    {
+        SceneManager.LoadScene("CutScene");
+    }
     
     public void enableDeathScreen()
     {
