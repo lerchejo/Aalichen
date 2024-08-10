@@ -9,10 +9,6 @@ using UnityEngine.SceneManagement;
 
 public class ScoreCheck : MonoBehaviour
 {
-    //This is temporary; replace with the right one
-
-   // private TextMeshProUGUI dialogWindow;
-   // private TextMeshProUGUI pressE;
 
     public float timer = 10;
     private float currentTimer = 100;
@@ -30,13 +26,26 @@ public class ScoreCheck : MonoBehaviour
     public int NeededScore = 1000;
 
     private GameObject player;
+    private GameObject audioHolder;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
         player = GameObject.Find("Player");
         gm = GameManager.Instance;
         
+        // Create a new GameObject to hold the AudioSource components
+        audioHolder = new GameObject("AudioHolder");
+        DontDestroyOnLoad(audioHolder);
+        
+        // Move the AudioSource components to the new GameObject
+        DepartSound.transform.parent = audioHolder.transform;
+        ArriveSound.transform.parent = audioHolder.transform;
+        IdleSound.transform.parent = audioHolder.transform;
+        
         StartCoroutine(StepOutOfBus());
+        
+        
     }
     IEnumerator StepOutOfBus(float seconds = 1.5f)
     {
@@ -165,7 +174,4 @@ public class ScoreCheck : MonoBehaviour
     {
         IdleSound.Play();
     }
-
-
-
 }

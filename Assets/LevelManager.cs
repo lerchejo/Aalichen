@@ -40,12 +40,13 @@ public class LevelManager : MonoBehaviour
 
     public void ReloadLevel()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 1f; 
+        deathScreen.SetActive(false);
         string currentLevelName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentLevelName);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        deathScreen.SetActive(false);
+       
     }
     // Update is called once per frame
     
