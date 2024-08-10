@@ -5583,8 +5583,65 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 621725924307363670}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4468198787840786176, guid: 6bf89db50ee26a342b8049ef07551014,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5253220671889491548}
   m_SourcePrefab: {fileID: 100100000, guid: 6bf89db50ee26a342b8049ef07551014, type: 3}
+--- !u!82 &2824431189944482 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 588168119319168499, guid: 6bf89db50ee26a342b8049ef07551014,
+    type: 3}
+  m_PrefabInstance: {fileID: 586487232894758225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &632946517490076401 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 66202174881752992, guid: 6bf89db50ee26a342b8049ef07551014,
+    type: 3}
+  m_PrefabInstance: {fileID: 586487232894758225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2597407603787795218 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3181871699563243075, guid: 6bf89db50ee26a342b8049ef07551014,
+    type: 3}
+  m_PrefabInstance: {fileID: 586487232894758225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3775673441892487214 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4343297404919790975, guid: 6bf89db50ee26a342b8049ef07551014,
+    type: 3}
+  m_PrefabInstance: {fileID: 586487232894758225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3900579176656851537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4468198787840786176, guid: 6bf89db50ee26a342b8049ef07551014,
+    type: 3}
+  m_PrefabInstance: {fileID: 586487232894758225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5253220671889491548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900579176656851537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182794acb7323f247a84e95f7540e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eatingFoodSound: {fileID: 2597407603787795218}
+  eatingNazisSound: {fileID: 5665798911645187221}
+  WalkingSound: {fileID: 2824431189944482}
+  DrinkingBeerSound: {fileID: 3775673441892487214}
+  damageSound: {fileID: 632946517490076401}
+--- !u!82 &5665798911645187221 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5081020324269101508, guid: 6bf89db50ee26a342b8049ef07551014,
+    type: 3}
+  m_PrefabInstance: {fileID: 586487232894758225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6254013027127589742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6839042251614885439, guid: 6bf89db50ee26a342b8049ef07551014,

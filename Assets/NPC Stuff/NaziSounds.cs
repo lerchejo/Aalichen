@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class NaziSounds : MonoBehaviour
 {
+    
+    
     [SerializeField] private AudioSource[] naziSounds;
     private AudioSource currentSound;
     //public List<GameObject> enemies; // List of enemies
    // private float timePassed = 0.0f;
-    public NPC npc;
     
     private void Start()
     {

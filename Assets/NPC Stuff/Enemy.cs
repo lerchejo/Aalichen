@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
     public GameManager gameManager;
     public GameObject _Player;
     public Player PlayerScript;
-    public LevelManager levelManager;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -66,23 +65,10 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player is in range");
             PlayerScript.decrementHP(damage);
            
         }
-      // else if (other.CompareTag("NPC"))
-      // {
-      //     // Check if the collided object is the damage collider
-      //    
-      //         var npc = other.GetComponentInParent<NPC>(); // Get the NPC component from the parent of the collided object
-      //         if (npc == null) return;
-      //         
-      //         npc.HP -= damage;
-      //         npc.healthBar.SetHealth(npc.HP); // Update the health bar
-      //         
-      //         if (npc.HP < 0)
-      //         {
-      //             Destroy(npc.gameObject);
-      //         }
-      // }
+
     }
 }

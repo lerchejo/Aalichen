@@ -26,15 +26,29 @@ public class PickUpText : MonoBehaviour
   private NPC npc;
 
   
-  public AnimationSound animationSound;
+  private AnimationSound animationSound;
   [SerializeField] private AudioSource[] naziSounds;
   private AudioSource currentSound;
   
   private bool pickUpAllowed;
+  
+  private GameObject audioHolder;
 
   private void Start()
   {
+    animationSound = AnimationSound.instance;
+    audioHolder = new GameObject("AudioHolder");
+    DontDestroyOnLoad(audioHolder);
+
+    // Move the AudioSource components to the new GameObject
+    animationSound.transform.parent = audioHolder.transform;
+    foreach (var sound in naziSounds)
+    {
+      sound.transform.parent = audioHolder.transform;
+    }
+
     UIManager.Instance.pressE.gameObject.SetActive(false);
+
     gameManager = GameManager.Instance;
     if (isFood)
     {
@@ -52,40 +66,33 @@ public class PickUpText : MonoBehaviour
       HealthBar = Parent.GetComponentInChildren<HealthBar>();
       HealthBar.SetMaxHealth(Enemy.health);
     }
-    
-    // Initialize currentSound to be able to check if it is playing
-    //currentSound = naziSounds[0];
   }
   private void Update()
   {
     if (Input.GetKeyDown(KeyCode.F) && isEating == false)
     {
       animator.SetBool("Attack", true);
-      
       isEating = true;
-        if (isFood && pickUpAllowed)
-        {
-          //animator.SetBool("isEatingFood", true);
-          //Play the right sound
-          if (isBeer)
-          {
-            animationSound.drinkingBeerSound.Play();
-          }
-          else
-          {
-            animationSound.eatingFoodSound.Play();
-          }
-          
-          eatFood();
-          
-        }
-        else if (!isFood && pickUpAllowed)
-        {
-          eatNazi();
-        }
-
-        StartCoroutine(StopAttack());
       
+      if (isFood && pickUpAllowed)
+      {
+        //animator.SetBool("isEatingFood", true);
+        //Play the right sound
+        if (isBeer)
+        {
+          animationSound.drinkingBeerSound.Play();
+        }
+        else
+        {
+          animationSound.eatingFoodSound.Play();
+        }
+        eatFood();
+      }
+      else if (!isFood && pickUpAllowed)
+      {
+        eatNazi();
+      }
+        StartCoroutine(StopAttack());
     }
   }
   
@@ -118,6 +125,8 @@ public class PickUpText : MonoBehaviour
 
   private void DealDamage()
   {
+    
+    Debug.Log("Dealing damage");
     // Play random Nazi Sound if it is the first time the enemy is hit
     if (Enemy.health >= 50)
     {
@@ -125,6 +134,7 @@ public class PickUpText : MonoBehaviour
       naziSounds[randomIndex].Play();
       currentSound = naziSounds[randomIndex];
     }
+    
     
     Enemy.health -= gameManager.Damage;
     HealthBar.SetHealth(Enemy.health);
@@ -136,7 +146,7 @@ public class PickUpText : MonoBehaviour
 
   public void killNazi()
   {
-    
+    Debug.Log("Kill Nazi");
     GameObject enemyToBeEaten = Parent.gameObject;
     var random = Random.Range(1, 10);
     
