@@ -5,7 +5,6 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
 
-
     public GameObject PauseScreen;
     public GameManager gameManager;
     public LevelManager LevelManager;
